@@ -1,0 +1,46 @@
+.slider {
+    margin-bottom: 60px;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        color: var(--grey-1);
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--violet-1);
+    }
+
+    &__btn-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    &__btn-prev {
+        cursor: pointer;
+        fill: var(--violet-1);
+        margin-right: 15px;
+    }
+
+    &__btn-next {
+        cursor: pointer;
+        fill: var(--violet-1);
+    }
+}
+
+.swiper-button-disabled {
+    fill: var(--violet-3);
+}

@@ -1,0 +1,46 @@
+:root {
+    --violet-1: #505FB6;
+    --violet-2: #7B87C8;
+    --violet-3: #A7AFDA;
+    --violet-4: #DCDFF0;
+    --cyan-1: #4AAEC3;
+    --cyan-2: #77C2D2;
+    --cyan-3: #A4D7E1;
+    --cyan-4: #DBEFF3;
+    --turquoise-1: #007474;
+    --turquoise-2: #409797;
+    --turquoise-3: #80B9B9;
+    --turquoise-4: #BFDCDC;
+    --green-1: #006A4E;
+    --green-2: #408F7A;
+    --green-3: #80B4A7;
+    --green-4: #BFDAD3;
+    --grey-1: #31333C;
+    --grey-2: #64666D;
+    --grey-3: #98999D;
+    --grey-4: #D6D6D8;
+    --line: #E1E3EE;
+    --background: #F8F9FF;
+}
+
+body {
+    background-color: var(--background);
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main {
+    max-width: 1080px;
+    width: 100%;
+}
+
+.info {
+    padding: 20px;
+}

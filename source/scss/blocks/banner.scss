@@ -1,0 +1,53 @@
+.banner {
+    padding: 60px 0;
+    background: linear-gradient(95.01deg, #98B0ED 0%, #D3E8FF 48.37%, #CFFFFC 100%);
+    border-radius: 40px;
+    margin-bottom: 60px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 120%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        color: var(--grey-1);
+
+        max-width: 670px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        width: 320px;
+        padding: 13px 20px;
+        background-color: #fff;
+        border: 1px solid var(--line);
+        border-radius: 30px;
+        margin-right: 20px;
+
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--grey-1);
+
+        &::placeholder {
+            color: var(--grey-3);
+        }
+    }
+
+    &__btn {
+        padding: 13px 40px;
+        background-color: var(--turquoise-1);
+        border-radius: 30px;
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color: #fff;
+    }
+}
