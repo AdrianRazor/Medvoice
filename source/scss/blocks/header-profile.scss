@@ -1,0 +1,111 @@
+.header-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    &__avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-img-container {
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--violet-1);
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: var(--violet-2);
+        }
+
+        &-default {
+            display: none;
+        }
+
+        &--empty {
+
+            & .header__avatar-default {
+                display: block;
+                fill: var(--violet-2);
+            }
+            & .header__avatar-img-container {
+                display: none;
+            }
+        }
+    }
+
+    &__username {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--grey-1);
+        margin-left: 10px;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 10;
+
+        width: 200px;
+        padding: 17px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 0 rgba(80, 95, 182, 0.15);
+    }
+
+    &__item {
+
+        &:first-child {
+            margin-bottom: 12px;
+        }
+
+        &:nth-child(2) {
+            position: relative;
+            margin-bottom: 30px;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: var(--line);
+
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+            }
+        }
+
+        &:hover {
+            & .header-profile__icon {
+                fill: var(--violet-1);
+                transition: all 0.2s ease;
+            }
+        
+            & .header-profile__text {
+                color: var(--violet-1);
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+    &__item-link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-right: 7px;
+        fill: var(--violet-2);
+        transition: all 0.2s ease;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--grey-1);
+        transition: all 0.2s ease;
+    }
+}

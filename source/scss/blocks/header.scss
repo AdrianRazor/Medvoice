@@ -10,7 +10,7 @@
         width: 260px;
         padding: 11px 17px 11px 44px;
         background-color: #fff;
-        background-image: url(../../img/icon-magnify.svg);
+        background-image: url(../img/icon-magnify.svg);
         background-repeat: no-repeat;
         background-position: 17px center;
         border: 1px solid var(--line);
@@ -38,28 +38,17 @@
         }
     }
 
-    &__btn-subscribe {
-        padding: 13px 25px;
-        background-color: var(--turquoise-4);
-        border-radius: 30px;
-        
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 100%;
-        color: var(--turquoise-1);
-
-        margin-right: 25px;
+    &__user {
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 
-    &__btn-login {
-        padding: 13px 25px;
-        background-color: transparent;
-        border: 1px solid var(--turquoise-1);
-        border-radius: 30px;
-        
+    &__trial-text {
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 100%;
-        color: var(--turquoise-1);
+        color: #DF5023;
+        margin-right: 40px;
     }
 }

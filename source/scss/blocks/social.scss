@@ -8,7 +8,8 @@
 
     &__list {
         display: flex;
-        margin: 20px 0;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     &__link {
@@ -19,16 +20,47 @@
     
     &__icon {
         fill: var(--violet-2);
+        transition: all 0.2s ease;
+
+        &:hover {
+            fill: var(--violet-1);
+            transition: all 0.2s ease;
+        }
 
         &-box {
             display: flex;
         }
     }
 
-    &__mail-link {
+    &__mail-link,
+    &__phone-link {
         font-weight: normal;
         font-size: 12px;
         line-height: 100%;
         color: var(--grey-1);
+    }
+
+    &__mail-link {
+        margin-bottom: 10px;
+    }
+}
+
+// Свёрнутая навигация
+.nav--minimize {
+    & .social__policy,
+    & .social__mail-link,
+    & .social__phone-link {
+        display: none;
+    }
+
+    & .social__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & .social__link:not(:last-child) {
+        margin-right: unset;
+        margin-bottom: 15px;
     }
 }

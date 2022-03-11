@@ -1,0 +1,25 @@
+.button {
+    padding: 14px 40px;
+    border-radius: 100px;
+    background-color: var(--turquoise-1);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+
+    &--subscribe {
+        padding: 14px 25px;
+        background-color: var(--turquoise-4);
+        color: var(--turquoise-1);
+
+        margin-right: 25px;
+    }
+
+    &--login {
+        padding: 13px 25px;
+        background-color: transparent;
+        border: 1px solid var(--turquoise-1);
+        color: var(--turquoise-1);
+    }
+}
