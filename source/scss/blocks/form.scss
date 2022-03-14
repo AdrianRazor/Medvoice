@@ -13,11 +13,21 @@
         text-align: center;
         color: var(--grey-1);
         margin-bottom: 40px;
+
+        &--margin {
+            margin-bottom: 15px;
+        }
     }
 
     &__content {
-        width: 340px;
+        max-width: 340px;
+        width: 100%;
         margin: 0 auto;
+
+        &--width {
+            max-width: 400px;
+            width: 100%;
+        }
     }
 
     &__google {
@@ -65,7 +75,7 @@
     }
 
     &__row {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     &__label {
@@ -82,17 +92,17 @@
         border: 1px solid var(--line);
         background-color: var(--background);
         padding: 0 15px;
-        margin-top: 10px;
+        margin-top: 7px;
     }
 
     &__text {
         margin-top: 10px;
-        margin-bottom: 25px;
         text-align: right;
     }
 
     &__button {
         margin: 0 auto;
+        margin-top: 25px;
     }
 }
 

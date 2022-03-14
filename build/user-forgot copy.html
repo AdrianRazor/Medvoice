@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <title>Medvoice - Войдите в свой аккаунт</title>
+</head>
+<body>
+    <div class="user__container">
+        <a href="index.html" class="logo logo--user"></a>
+        <form class="form" action="" id="login">
+            <h1 class="form__title">
+                Забыли пароль?
+            </h1>
+    
+            <div class="form__content">    
+                <p class="form__row">
+                    <label class="form__label" for="email">Логин</label>
+                    <input class="form__field" type="email" name="email" id="email" placeholder="Введите ваш email">
+                </p>
+              
+                <button class="form__button button" type="submit">
+                    Восcтановить         
+                </button>
+              
+                <!-- Это не надо стилизовать (старт) -->
+                <div class="text" id="ajax-response"></div>
+                <!-- Это не надо стилизовать (конец) -->
+            </div>            
+        </form>
+        <p class="text text--subform text--arrow">
+            <a href="#">Вернуться на страницу входа</a>  
+        </p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

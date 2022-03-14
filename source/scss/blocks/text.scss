@@ -15,4 +15,17 @@
     &--subform {
         margin-top: 25px;
     }
+
+    &--arrow {
+        & a::before {
+            content: url(../img/icon-arrow-link.svg);
+            margin-right: 10px;
+        }
+    }
+
+    &--size {
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+    }
 }
