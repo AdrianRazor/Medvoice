@@ -1,4 +1,5 @@
 .button {
+    display: inline-block;
     padding: 14px 40px;
     border-radius: 100px;
     background-color: var(--turquoise-1);
@@ -13,7 +14,7 @@
         background-color: var(--turquoise-4);
         color: var(--turquoise-1);
 
-        margin-right: 25px;
+        margin-right: 20px;
     }
 
     &--login {

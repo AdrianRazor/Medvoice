@@ -109,22 +109,14 @@
 
     // Неактивная ссылка в навигации
     &__item--disabled {
+        pointer-events: none;
+
         & .nav__text {
             color: var(--grey-3);
         }
 
         & .nav__icon {
             fill: var(--violet-4);
-        }
-
-        &:hover {
-            & .nav__text {
-                color: var(--grey-2);
-            }
-    
-            & .nav__icon {
-                fill: var(--violet-3);
-            }
         }
     }
 

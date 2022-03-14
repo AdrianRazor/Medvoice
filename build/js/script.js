@@ -32,7 +32,7 @@ window.addEventListener('click', e => {
 // Свайпер
 const swiperCourses = new Swiper('.swiper-courses', {
     spaceBetween: 20,
-    slidesPerView: 4,
+    slidesPerView: 'auto',
   
     navigation: {
         nextEl: '.slider__btn-next',
@@ -42,7 +42,7 @@ const swiperCourses = new Swiper('.swiper-courses', {
 
 const swiperWebinar = new Swiper('.swiper-webinar', {
     spaceBetween: 20,
-    slidesPerView: 4,
+    slidesPerView: 'auto',
   
     navigation: {
         nextEl: '.slider__btn-next',
@@ -52,7 +52,7 @@ const swiperWebinar = new Swiper('.swiper-webinar', {
 
 const swiperLecture = new Swiper('.swiper-lecture', {
     spaceBetween: 20,
-    slidesPerView: 4,
+    slidesPerView: 'auto',
   
     navigation: {
         nextEl: '.slider__btn-next',
