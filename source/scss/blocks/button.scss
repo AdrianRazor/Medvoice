@@ -1,6 +1,8 @@
 .button {
-    display: inline-block;
-    padding: 14px 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
     border-radius: 100px;
     background-color: var(--turquoise-1);
     
@@ -10,15 +12,15 @@
     color: #fff;
 
     &--subscribe {
-        padding: 14px 25px;
+        padding: 0 25px;
         background-color: var(--turquoise-4);
         color: var(--turquoise-1);
 
-        margin-right: 20px;
+        margin-right: 25px;
     }
 
     &--login {
-        padding: 13px 25px;
+        padding: 0 25px;
         background-color: transparent;
         border: 1px solid var(--turquoise-1);
         color: var(--turquoise-1);

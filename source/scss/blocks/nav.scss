@@ -4,15 +4,6 @@
     padding: 25px 20px;
     border-right: 1px solid var(--line);
 
-    &__logo {
-        display: block;
-        height: 21px;
-        margin-bottom: 25px;
-
-        background-image: url(../img/medvoice-logo.png);
-        background-repeat: no-repeat;
-    }
-
     &__btn {
         width: 20px;
         height: 20px;
@@ -126,7 +117,7 @@
     &--minimize {
         padding: 25px 11px 25px 12px;
 
-        & .nav__logo {
+        & .logo--nav {
             background-image: url(../img/medvoice-logo-short.png);
             background-position: center;
         }

@@ -1,6 +1,6 @@
 .card {
     max-width: 245px;
-    height: 340px;
+    min-height: 340px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -14,7 +14,7 @@
     }
 
     &__link-box {
-        min-height: 160px;
+        max-height: 160px;
         position: relative;
         overflow: hidden;
         border-top-left-radius: 20px;
@@ -70,6 +70,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex-grow: 1;
     }
 
     &__title {
@@ -77,6 +78,7 @@
         font-size: 16px;
         line-height: 120%;
         color: var(--grey-1);
+        margin-bottom: 20px;
     }
 
     &__description {

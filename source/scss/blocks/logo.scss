@@ -1,0 +1,15 @@
+.logo {
+    display: block;
+    min-height: 21px;
+    background-image: url(../img/medvoice-logo.png);
+    background-repeat: no-repeat;
+
+    &--nav {
+        margin-bottom: 25px;
+    }
+
+    &--user {
+        width: 140px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,18 @@
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--grey-1);
+
+    & a {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: right;
+        color: var(--violet-1);
+    }
+
+    &--subform {
+        margin-top: 25px;
+    }
+}

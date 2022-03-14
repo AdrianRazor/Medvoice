@@ -2,14 +2,20 @@
 @import "global.scss";
 @import "fonts.scss";
 
+@import "blocks/text.scss";
+@import "blocks/form.scss";
 @import "blocks/button.scss";
+@import "blocks/logo.scss";
 
 @import "blocks/nav.scss";
 @import "blocks/social.scss";
+
 @import "blocks/header.scss";
 @import "blocks/header-profile.scss";
+
 @import "blocks/banner.scss";
 @import "blocks/slider.scss";
 @import "blocks/card.scss";
 
 @import "blocks/search.scss";
+@import "blocks/user.scss";

@@ -8,7 +8,8 @@
 
     &__search {
         width: 260px;
-        padding: 11px 17px 11px 44px;
+        min-height: 40px;
+        padding: 0 17px 0 44px;
         background-color: #fff;
         background-image: url(../img/icon-magnify.svg);
         background-repeat: no-repeat;
@@ -50,6 +51,10 @@
         line-height: 100%;
         color: #DF5023;
         margin-right: 40px;
+    }
+
+    &__guest-mode {
+        display: flex;
     }
 }
 
