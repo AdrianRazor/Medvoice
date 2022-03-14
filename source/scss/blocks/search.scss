@@ -1,4 +1,4 @@
-.search-results {
+.search {
     padding: 60px 20px 100px 20px;
 
     &__head {
@@ -23,9 +23,9 @@
     }
     
     &__cards-wrapper {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 
     &__pagination {
@@ -65,5 +65,21 @@
     &__arrow-next {
         fill: var(--violet-1);
         margin-left: 10px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .search {
+        &__cards-wrapper {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+    .search {
+        &__cards-wrapper {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 }

@@ -13,10 +13,6 @@
         transition: all 0.6s ease;
     }
 
-    &--mb {
-        margin-bottom: 40px;
-    }
-
     &__link-box {
         min-height: 160px;
         position: relative;
@@ -117,10 +113,9 @@
             }
         }
     }
-}
 
-// @media (min-width: 1920px) {
-//     .card {
-//         max-width: 245px;
-//     }
-// }
+    &--search {
+        max-width: unset;
+        margin-bottom: 40px;
+    }
+}
