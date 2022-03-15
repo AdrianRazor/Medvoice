@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <title>Medvoice - Войдите в свой аккаунт</title>
+    <title>Medvoice - Создайте аккаунт</title>
 </head>
 <body>
     <div class="user__container">
         <a href="index.html" class="logo logo--user"></a>
         <form class="form" action="" id="login">
             <h1 class="form__title">
-                Войдите в свой аккаунт
+                Создайте аккаунт
             </h1>
     
             <div class="form__content">
@@ -25,6 +25,11 @@
                         </div>
                     </div>
                 </div>
+
+                <p class="form__row">
+                    <label class="form__label" for="nickname">Имя</label>
+                    <input class="form__field" type="text" name="nickname" id="nickname" placeholder="Введите ваше имя">
+                </p>
     
                 <p class="form__row">
                     <label class="form__label" for="email">Логин</label>
@@ -33,15 +38,11 @@
     
                 <p class="form__row">
                     <label class="form__label" for="password">Пароль</label>
-                    <input class="form__field" type="password" name="password" id="password" placeholder="Введите ваш пароль">
+                    <input class="form__field" type="password" name="password" id="password" placeholder="Придумайте пароль">
                 </p>
               
-                <p class="form__text text">
-                    <a href="/?action=forgot">Забыли пароль</a>  
-                </p>
-              
-                <button class="form__button button" type="submit">
-                    Войти         
+                <button class="form__button--trial button" type="submit">
+                    Оформить триал        
                 </button>
               
                 <!-- Это не надо стилизовать (старт) -->
@@ -50,10 +51,7 @@
             </div>            
         </form>
         <p class="text text--subform">
-            Ещё нет аккаунта? 
-            <a href="/?action=register">Оформите подписку</a> 
-            или 
-            <a href="/?action=trial">триальную версию</a>  
+            <a href="/?action=login">Войти</a> в существующий аккаунт 
         </p>
     </div>
 

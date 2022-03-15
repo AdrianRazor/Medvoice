@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <title>Medvoice - Пароль восстановлен</title>
+    <title>Medvoice - Подтвердите свою почту</title>
 </head>
 <body>
     <div class="user__container">
         <a href="index.html" class="logo logo--user"></a>
-        <form class="form">
-            <h1 class="form__title form__title--margin">
-                Пароль восстановлен
+        <div class="form form--confirm">
+            <svg class="form__img">
+                <use xlink:href="img/sprite.svg#vector-confirm"></use>
+            </svg>
+
+            <h1 class="form__title form__title--confirm">
+                Подтвердите свою почту
             </h1>
     
-            <div class="form__content form__content--width">    
+            <div class="form__content form__content--confirm">    
                 <p class="text text--size">
-                    Вы успешно создали новый пароль. Пожалуйста, войдите заново в свой профиль
+                    Мы отправили вам письмо с верификационной ссылкой. Вам необходимо подтвердить почту. 
                 </p>
-              
-                <button class="form__button button" type="submit">
-                    Войти
-                </button>
               
                 <!-- Это не надо стилизовать (старт) -->
                 <div class="text" id="ajax-response"></div>
                 <!-- Это не надо стилизовать (конец) -->
             </div>            
-        </form>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
