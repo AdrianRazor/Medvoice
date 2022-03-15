@@ -118,6 +118,10 @@
 
     &--search {
         max-width: unset;
-        margin-bottom: 40px;
+
+        & .card__link-box {
+            max-height: unset;
+            min-height: 160px;
+        }
     }
 }
