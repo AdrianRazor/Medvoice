@@ -8,8 +8,7 @@
 
     &__list {
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 15px;
+        margin: 20px 0;
     }
 
     &__link {
@@ -34,6 +33,7 @@
 
     &__mail-link,
     &__phone-link {
+        display: block;
         font-weight: normal;
         font-size: 12px;
         line-height: 100%;

@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="user__container">
-        <a href="index.html" class="logo logo--user"></a>
+        <a href="index.html" class="logo logo--user">
+            <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
+        </a>
         <form class="form" action="" id="login">
             <h1 class="form__title">
                 Забыли пароль?
@@ -29,8 +31,13 @@
                 <!-- Это не надо стилизовать (конец) -->
             </div>            
         </form>
-        <p class="text text--subform text--arrow">
-            <a href="#">Вернуться на страницу входа</a>  
+        <p class="text text--subform">
+            <a href="#" class="text__link">
+                <svg class="text__arrow" width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.75723 11.7639C6.59538 11.9213 6.39306 12 6.17052 12C5.96821 12 5.74566 11.9213 5.58381 11.7639L0.242774 6.57049C0.080924 6.41312 0 6.21639 0 6C0 5.78361 0.080924 5.58689 0.242774 5.42951L5.58381 0.236066C5.90751 -0.0786885 6.43353 -0.0786885 6.75723 0.236066C7.08092 0.55082 7.08092 1.06229 6.75723 1.37705L2.00289 6L6.75723 10.623C7.08092 10.9377 7.08092 11.4492 6.75723 11.7639Z"/>
+                </svg>
+                Вернуться на страницу входа
+            </a>  
         </p>
     </div>
 

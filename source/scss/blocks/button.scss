@@ -11,6 +11,10 @@
     line-height: 100%;
     color: #fff;
 
+    &--link {
+        display: inline-flex;
+    }
+
     &--subscribe {
         padding: 0 25px;
         background-color: var(--turquoise-4);

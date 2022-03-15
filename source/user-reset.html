@@ -8,8 +8,10 @@
 </head>
 <body>
     <div class="user__container">
-        <a href="index.html" class="logo logo--user"></a>
-        <form class="form">
+        <a href="index.html" class="logo logo--user">
+            <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
+        </a>
+        <div class="form">
             <h1 class="form__title form__title--margin">
                 Пароль восстановлен
             </h1>
@@ -19,15 +21,15 @@
                     Вы успешно создали новый пароль. Пожалуйста, войдите заново в свой профиль
                 </p>
               
-                <button class="form__button button" type="submit">
+                <a href="#" class="form__button button button--link">
                     Войти
-                </button>
+                </a>
               
                 <!-- Это не надо стилизовать (старт) -->
                 <div class="text" id="ajax-response"></div>
                 <!-- Это не надо стилизовать (конец) -->
             </div>            
-        </form>
+        </div>
     </div>
 
     <script src="js/script.js"></script>

@@ -118,12 +118,12 @@
         padding: 25px 11px 25px 12px;
 
         & .logo--nav {
-            background-image: url(../img/medvoice-logo-short.png);
-            background-position: center;
+            justify-content: center;
         }
 
         & .nav__btn {
             padding-left: 8px;
+            margin: 0 auto;
         }
 
         & .nav__btn-arrow {
