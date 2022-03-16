@@ -1,14 +1,16 @@
 .social {
     &__policy {
+        display: inline-block;
         font-weight: 500;
         font-size: 14px;
         line-height: 120%;
         color: var(--turquoise-1);
+        margin-bottom: 20px;
     }
 
     &__list {
         display: flex;
-        margin: 20px 0;
+        margin-bottom: 20px;
     }
 
     &__link {
@@ -42,6 +44,10 @@
 
     &__mail-link {
         margin-bottom: 10px;
+    }
+
+    &__phone-link {
+        margin-bottom: 25px;
     }
 }
 

@@ -1,7 +1,6 @@
 .nav {
     max-width: 200px;
-    max-height: 720px;
-    padding: 25px 20px;
+    padding: 25px 20px 0 25px;
     border-right: 1px solid var(--line);
 
     &__btn {
@@ -13,6 +12,7 @@
         display: flex;
         align-items: center;
         padding-left: 6px;
+        margin-bottom: 15px;
 
         &-arrow {
             fill: var(--violet-2);
@@ -20,7 +20,6 @@
     }
 
     &__wrapper {
-        margin-top: 15px;
         margin-bottom: 190px;
     }
     
