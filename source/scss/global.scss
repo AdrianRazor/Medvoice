@@ -34,7 +34,7 @@ body {
     display: flex;
 }
 
-.main {
+.content {
     width: calc(100% - 200px);
 
     &--minimize {
@@ -42,7 +42,7 @@ body {
     }
 }
 
-.info {
+.main {
     padding: 20px;
 }
 

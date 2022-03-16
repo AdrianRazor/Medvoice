@@ -7,55 +7,59 @@
     <title>Medvoice - Создайте аккаунт</title>
 </head>
 <body>
-    <div class="user__container">
-        <a href="index.html" class="logo logo--user">
-            <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
-        </a>
-        <form class="form" action="" id="login">
-            <h1 class="form__title">
-                Создайте аккаунт
-            </h1>
-    
-            <div class="form__content">
-                <div class="form__google">
-                    <div class="wp_google_login">
-                        <div class="wp_google_login__button-container">
-                            <a class="wp_google_login__button" href="https://accounts.google.com/o/oauth2/auth?client_id=353391705147-i7u9klqdn1vk9ljqt3koknsths63pr9e.apps.googleusercontent.com&amp;redirect_uri=http%3A%2F%2Fmedvoice.webnauts.pro%2Fwp-login.php&amp;state=eyJub25jZSI6ImIzMzdjOTk3NGYiLCJyZWRpcmVjdF90byI6Imh0dHA6XC9cL21lZHZvaWNlLndlYm5hdXRzLnByb1wvd3AtYWRtaW5cLyIsInByb3ZpZGVyIjoiZ29vZ2xlIn0%3D&amp;scope=email+profile+openid&amp;access_type=online&amp;response_type=code">
-                                <span class="wp_google_login__google-icon"></span>
-                                Войдите с помощью Google
-                            </a>
+    <main class="main-user">
+        <section class="user">
+            <div class="user__wrapper">
+                <a href="index.html" class="logo logo--user">
+                    <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
+                </a>
+                <form class="form" action="" id="login">
+                    <h1 class="form__title">
+                        Создайте аккаунт
+                    </h1>
+            
+                    <div class="form__content">
+                        <div class="form__google">
+                            <div class="wp_google_login">
+                                <div class="wp_google_login__button-container">
+                                    <a class="wp_google_login__button" href="https://accounts.google.com/o/oauth2/auth?client_id=353391705147-i7u9klqdn1vk9ljqt3koknsths63pr9e.apps.googleusercontent.com&amp;redirect_uri=http%3A%2F%2Fmedvoice.webnauts.pro%2Fwp-login.php&amp;state=eyJub25jZSI6ImIzMzdjOTk3NGYiLCJyZWRpcmVjdF90byI6Imh0dHA6XC9cL21lZHZvaWNlLndlYm5hdXRzLnByb1wvd3AtYWRtaW5cLyIsInByb3ZpZGVyIjoiZ29vZ2xlIn0%3D&amp;scope=email+profile+openid&amp;access_type=online&amp;response_type=code">
+                                        <span class="wp_google_login__google-icon"></span>
+                                        Войдите с помощью Google
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <p class="form__row">
-                    <label class="form__label" for="nickname">Имя</label>
-                    <input class="form__field" type="text" name="nickname" id="nickname" placeholder="Введите ваше имя">
+        
+                        <p class="form__row">
+                            <label class="form__label" for="nickname">Имя</label>
+                            <input class="form__field" type="text" name="nickname" id="nickname" placeholder="Введите ваше имя">
+                        </p>
+            
+                        <p class="form__row form__row--mt">
+                            <label class="form__label" for="email">Логин</label>
+                            <input class="form__field" type="email" name="email" id="email" placeholder="Введите ваш email">
+                        </p>
+            
+                        <p class="form__row form__row--mt">
+                            <label class="form__label" for="password">Пароль</label>
+                            <input class="form__field" type="password" name="password" id="password" placeholder="Придумайте пароль">
+                        </p>
+                      
+                        <button class="form__button button" type="submit">
+                            Начать регистрацию         
+                        </button>
+                      
+                        <!-- Это не надо стилизовать (старт) -->
+                        <div class="text" id="ajax-response"></div>
+                        <!-- Это не надо стилизовать (конец) -->
+                    </div>            
+                </form>
+                <p class="text text--subform">
+                    <a href="/?action=login">Войти</a> в существующий аккаунт 
                 </p>
-    
-                <p class="form__row">
-                    <label class="form__label" for="email">Логин</label>
-                    <input class="form__field" type="email" name="email" id="email" placeholder="Введите ваш email">
-                </p>
-    
-                <p class="form__row">
-                    <label class="form__label" for="password">Пароль</label>
-                    <input class="form__field" type="password" name="password" id="password" placeholder="Придумайте пароль">
-                </p>
-              
-                <button class="form__button button" type="submit">
-                    Начать регистрацию         
-                </button>
-              
-                <!-- Это не надо стилизовать (старт) -->
-                <div class="text" id="ajax-response"></div>
-                <!-- Это не надо стилизовать (конец) -->
-            </div>            
-        </form>
-        <p class="text text--subform">
-            <a href="/?action=login">Войти</a> в существующий аккаунт 
-        </p>
-    </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

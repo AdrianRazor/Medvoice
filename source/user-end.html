@@ -7,32 +7,35 @@
     <title>Medvoice - Триальная версия</title>
 </head>
 <body>
-    <div class="user__container">
+    <main class="main-user">
+        <section class="user">
+            <div class="user__wrapper">
+                <div class="form form--end">
+                    <div class="form__img-box">
+                        <img class="form__img" src="img/vector-trial.png" alt="vector illustration lock">
+                    </div>
         
-        <div class="form form--end">
-            <svg class="form__img">
-                <use xlink:href="img/sprite.svg#vector-trial"></use>
-            </svg>
-
-            <h1 class="form__title form__title--end">
-                Срок действия вашей триальной версии вышел
-            </h1>
-    
-            <div class="form__content form__content--end">    
-                <p class="text text--size">
-                    Чтобы продолжить пользоваться платформой, необходимо оформить подписку
-                </p>
-              
-                <a class="form__button--end button button--link">
-                    Оформить подписку       
-                </a>
-              
-                <!-- Это не надо стилизовать (старт) -->
-                <div class="text" id="ajax-response"></div>
-                <!-- Это не надо стилизовать (конец) -->
-            </div>            
-        </div>
-    </div>
+                    <h1 class="form__title form__title--end">
+                        Срок действия вашей триальной версии вышел
+                    </h1>
+            
+                    <div class="form__content form__content--end">    
+                        <p class="text text--size">
+                            Чтобы продолжить пользоваться платформой, необходимо оформить подписку
+                        </p>
+                      
+                        <a class="form__button--end button button--link">
+                            Оформить подписку       
+                        </a>
+                      
+                        <!-- Это не надо стилизовать (старт) -->
+                        <div class="text" id="ajax-response"></div>
+                        <!-- Это не надо стилизовать (конец) -->
+                    </div>            
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

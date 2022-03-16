@@ -7,30 +7,34 @@
     <title>Medvoice - Подтвердите свою почту</title>
 </head>
 <body>
-    <div class="user__container">
-        <a href="index.html" class="logo logo--user">
-            <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
-        </a>
-        <div class="form form--confirm">
-            <svg class="form__img">
-                <use xlink:href="img/sprite.svg#vector-confirm"></use>
-            </svg>
-
-            <h1 class="form__title form__title--confirm">
-                Подтвердите свою почту
-            </h1>
-    
-            <div class="form__content form__content--confirm">    
-                <p class="text text--size">
-                    Мы отправили вам письмо с верификационной ссылкой. Вам необходимо подтвердить почту. 
-                </p>
-              
-                <!-- Это не надо стилизовать (старт) -->
-                <div class="text" id="ajax-response"></div>
-                <!-- Это не надо стилизовать (конец) -->
-            </div>            
-        </div>
-    </div>
+    <main class="main-user">
+        <section class="user">
+            <div class="user__wrapper">
+                <a href="index.html" class="logo logo--user">
+                    <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
+                </a>
+                <div class="form form--confirm">
+                    <div class="form__img-box">
+                        <img class="form__img" src="img/vector-confirm.png" alt="vector illustration mail">
+                    </div>
+        
+                    <h1 class="form__title form__title--confirm">
+                        Подтвердите свою почту
+                    </h1>
+            
+                    <div class="form__content form__content--confirm">    
+                        <p class="text text--size">
+                            Мы отправили вам письмо с верификационной ссылкой. Вам необходимо подтвердить почту. 
+                        </p>
+                      
+                        <!-- Это не надо стилизовать (старт) -->
+                        <div class="text" id="ajax-response"></div>
+                        <!-- Это не надо стилизовать (конец) -->
+                    </div>            
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

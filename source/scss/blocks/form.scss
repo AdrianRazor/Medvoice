@@ -1,5 +1,4 @@
 .form {
-    max-width: 530px;
     width: 100%;
     padding: 40px 65px;
     background-color: #fff;
@@ -10,6 +9,14 @@
     &--confirm {
         padding: 40px;
         text-align: center;
+    }
+
+    &__img-box {
+        margin: 0 auto;
+    }
+
+    &__img {
+        width: auto;
     }
 
     &__title {
@@ -50,23 +57,9 @@
     }
 
     &__google {
-        margin-bottom: 36px;
-
-        & .wp_google_login__button-container {
-            position: relative;
-
-            &::after {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 1px;
-                background-color: var(--line);
-
-                position: absolute;
-                bottom: -20px;
-                left: 0;
-            }
-        }
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 20px;
 
         & .wp_google_login__button {
             width: 100%;
@@ -87,14 +80,23 @@
 
         & .wp_google_login__google-icon {
             &::before {
-                content: url(../img/icon-google.svg);
+                content: "";
+                display: block;
+                width: 14px;
+                height: 14px;
                 margin-right: 10px;
+                background-image: url(../img/icon-google.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
         }
     }
 
     &__row {
-        margin-top: 15px;
+        &--mt {
+            margin-top: 20px;
+        }
     }
 
     &__label {
@@ -111,7 +113,7 @@
         border: 1px solid var(--line);
         background-color: var(--background);
         padding: 0 15px;
-        margin-top: 7px;
+        margin-top: 10px;
     }
 
     &__text {
