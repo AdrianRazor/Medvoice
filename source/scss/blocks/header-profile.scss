@@ -8,28 +8,19 @@
         align-items: center;
         justify-content: center;
 
-        &-img-container {
-            width: 30px;
-            height: 30px;
-            border: 1px solid var(--violet-1);
-            border-radius: 50%;
-            overflow: hidden;
-            background-color: var(--violet-2);
-        }
-
-        &-default {
-            display: none;
-        }
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--violet-1);
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--violet-2);
 
         &--empty {
-
-            & .header__avatar-default {
-                display: block;
-                fill: var(--violet-2);
-            }
-            & .header__avatar-img-container {
-                display: none;
-            }
+            width: unset;
+            height: unset;
+            background-color: transparent;
+            border: none;
+            border-radius: unset;
         }
     }
 

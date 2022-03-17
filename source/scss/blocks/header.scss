@@ -16,6 +16,7 @@
         background-repeat: no-repeat;
         background-position: 17px center;
         border: 1px solid var(--line);
+        transition: border 0.2s ease;
         border-radius: 30px;
 
         font-weight: normal;
@@ -37,6 +38,7 @@
         &:focus,
         &:active {
             border: 1px solid var(--turquoise-1);
+            transition: border 0.2s ease;
         }
     }
 

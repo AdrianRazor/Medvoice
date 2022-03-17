@@ -94,8 +94,8 @@
     }
 
     &__row {
-        &--mt {
-            margin-top: 20px;
+        &:not(:first-of-type) {
+            margin-top: 15px;
         }
     }
 
@@ -132,7 +132,6 @@
             width: 100%;
             padding: 0;
             justify-content: center;
-            margin: 25px auto 0 auto;
         }
     }
 }
