@@ -1,0 +1,100 @@
+.tariff-card {
+    padding: 20px;
+    background-color: #fff;
+    border: 5px solid transparent;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &:hover {
+        background-color: var(--violet-4);
+        border: 5px solid var(--violet-1);
+        transition: all 0.4s ease;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__duration {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        color: var(--grey-1);
+        margin-bottom: 25px;
+    }
+
+    &__discount {
+        height: 28px;
+        padding: 0 20px;
+        background-color: var(--background);
+        border-radius: 30px;
+
+        display: flex;
+        align-items: center;
+
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        color: var(--grey-1);
+    }
+    
+    &__price {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__number {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        color: var(--grey-1);
+    }
+
+    &__currency-left,
+    &__currency-right {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        color: var(--grey-1);
+    }
+
+    &__currency-left {
+        align-self: flex-start;
+        margin-right: 5px;
+        margin-top: 5px;
+
+        display: none;
+    }
+
+    &__currency-right {
+        align-self: flex-end;
+        margin-left: 5px;
+        margin-bottom: 3px;
+
+        display: block;
+    }
+
+    &__price--left {
+        & .tariff-card__currency-left {
+            display: block;
+        }
+
+        & .tariff-card__currency-right {
+            display: none;
+        }
+    }
+    
+    &__button {
+        font-size: 14px;
+        background-color: var(--violet-1);
+        align-self: flex-end;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

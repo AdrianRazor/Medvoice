@@ -1,0 +1,35 @@
+.tariff {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__wrapper {
+        max-width: 1180px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 100%;
+        color: var(--grey-1);
+        margin-bottom: 40px;
+    }
+
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    &__button {
+        align-self: flex-end;
+    }
+}
