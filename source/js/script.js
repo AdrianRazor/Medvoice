@@ -26,40 +26,46 @@ if (headerProfile) {
 }
 
 window.addEventListener('click', e => {
-    const target = e.target;
-    if (!target.closest('.header-profile__menu') && !target.closest('.header-profile')) {
-        headerProfileMenu.classList.add('hidden');
+    if(headerProfileMenu) {
+        const target = e.target;
+        if (!target.closest('.header-profile__menu') && !target.closest('.header-profile')) {
+            headerProfileMenu.classList.add('hidden');
+        }
     }
 })
 
 
 // Свайпер
-const swiperCourses = new Swiper('.swiper-courses', {
-    spaceBetween: 20,
-    slidesPerView: 'auto',
-  
-    navigation: {
-        nextEl: '.slider__btn-next',
-        prevEl: '.slider__btn-prev',
-    },
-});
+let swiperExist = document.querySelector('.swiper');
 
-const swiperWebinar = new Swiper('.swiper-webinar', {
-    spaceBetween: 20,
-    slidesPerView: 'auto',
-  
-    navigation: {
-        nextEl: '.slider__btn-next',
-        prevEl: '.slider__btn-prev',
-    },
-});
-
-const swiperLecture = new Swiper('.swiper-lecture', {
-    spaceBetween: 20,
-    slidesPerView: 'auto',
-  
-    navigation: {
-        nextEl: '.slider__btn-next',
-        prevEl: '.slider__btn-prev',
-    },
-});
+if(swiperExist) {
+    const swiperCourses = new Swiper('.swiper-courses', {
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+      
+        navigation: {
+            nextEl: '.slider__btn-next',
+            prevEl: '.slider__btn-prev',
+        },
+    });
+    
+    const swiperWebinar = new Swiper('.swiper-webinar', {
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+      
+        navigation: {
+            nextEl: '.slider__btn-next',
+            prevEl: '.slider__btn-prev',
+        },
+    });
+    
+    const swiperLecture = new Swiper('.swiper-lecture', {
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+      
+        navigation: {
+            nextEl: '.slider__btn-next',
+            prevEl: '.slider__btn-prev',
+        },
+    });
+}
