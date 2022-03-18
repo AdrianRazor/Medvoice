@@ -4,8 +4,14 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 120%;
-        color: var(--turquoise-1);
+        color: var(--turquoise-2);
+        transition: all 0.2s ease;
         margin-bottom: 20px;
+
+        &:hover {
+            color: var(--turquoise-1);
+            transition: all 0.2s ease;
+        }
     }
 
     &__list {

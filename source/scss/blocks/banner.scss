@@ -3,6 +3,12 @@
     background: linear-gradient(95.01deg, #98B0ED 0%, #D3E8FF 48.37%, #CFFFFC 100%);
     border-radius: 40px;
     margin-bottom: 60px;
+    min-height: 308px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &__title {
         font-weight: 700;
@@ -10,7 +16,6 @@
         line-height: 120%;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 40px;
         color: var(--grey-1);
 
         max-width: 670px;
@@ -19,7 +24,8 @@
     &__form {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        margin-top: 40px;
     }
 
     &__input {
@@ -46,5 +52,9 @@
             border: 1px solid var(--turquoise-1);
             transition: border 0.2s ease;
         }
+    }
+
+    &__link {
+        margin-top: 40px;
     }
 }
