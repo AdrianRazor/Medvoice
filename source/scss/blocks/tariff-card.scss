@@ -47,6 +47,16 @@
     &__price {
         display: flex;
         margin-bottom: 40px;
+
+        &--left {
+            align-items: flex-start;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        &--right {
+            align-items: flex-end;
+        }
     }
 
     &__number {
@@ -56,37 +66,20 @@
         color: var(--grey-1);
     }
 
-    &__currency-left,
-    &__currency-right {
+    &__currency {
         font-weight: 700;
         font-size: 28px;
         line-height: 100%;
         color: var(--grey-1);
-    }
-
-    &__currency-left {
-        align-self: flex-start;
-        margin-right: 5px;
-        margin-top: 5px;
-
-        display: none;
-    }
-
-    &__currency-right {
-        align-self: flex-end;
-        margin-left: 5px;
-        margin-bottom: 3px;
-
-        display: block;
-    }
-
-    &__price--left {
-        & .tariff-card__currency-left {
-            display: block;
+        
+        &--left {
+            margin-right: 5px;
+            margin-top: 5px;
         }
-
-        & .tariff-card__currency-right {
-            display: none;
+    
+        &--right {
+            margin-left: 5px;
+            margin-bottom: 3px;
         }
     }
     

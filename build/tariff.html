@@ -9,7 +9,7 @@
 <body>
     <main class="main-tariff">
         <section class="tariff">
-            <div class="tariff__wrapper">
+            <form class="tariff__wrapper">
                 <a href="index.html" class="logo logo--tariff">
                     <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
                 </a>
@@ -19,15 +19,14 @@
                 <div class="tariff__cards">
                     <div class="tariff-card">
                         <div class="tariff-card__head">
-                            <p class="tariff-card__duration">
+                            <h2 class="tariff-card__duration">
                                 1 месяц
-                            </p>
+                            </h2>
                         </div>
 
                         <div class="tariff-card__price tariff-card__price--left">
-                            <p class="tariff-card__currency-left">&#36;</p>
                             <p class="tariff-card__number">10</p>
-                            <p class="tariff-card__currency-right">грн</p>
+                            <p class="tariff-card__currency tariff-card__currency--left">&#36;</p>
                         </div>
 
                         <button class="button tariff-card__button">
@@ -37,18 +36,17 @@
 
                     <div class="tariff-card">
                         <div class="tariff-card__head">
-                            <p class="tariff-card__duration">
+                            <h2 class="tariff-card__duration">
                                 6 месяцев
-                            </p>
+                            </h2>
                             <div class="tariff-card__discount">
                                 Скидка 10%
                             </div>
                         </div>
 
                         <div class="tariff-card__price tariff-card__price--left">
-                            <p class="tariff-card__currency-left">&#36;</p>
                             <p class="tariff-card__number">45</p>
-                            <p class="tariff-card__currency-right">грн</p>
+                            <p class="tariff-card__currency tariff-card__currency--left">&#36;</p>
                         </div>
 
                         <button class="button tariff-card__button">
@@ -58,18 +56,17 @@
 
                     <div class="tariff-card">
                         <div class="tariff-card__head">
-                            <p class="tariff-card__duration">
+                            <h2 class="tariff-card__duration">
                                 12 месяцев
-                            </p>
+                            </h2>
                             <div class="tariff-card__discount">
                                 Скидка 10%
                             </div>
                         </div>
 
                         <div class="tariff-card__price tariff-card__price--left">
-                            <p class="tariff-card__currency-left">&#36;</p>
                             <p class="tariff-card__number">95</p>
-                            <p class="tariff-card__currency-right">грн</p>
+                            <p class="tariff-card__currency tariff-card__currency--left">&#36;</p>
                         </div>
 
                         <button class="button tariff-card__button">
@@ -77,13 +74,11 @@
                         </button>
                     </div>
                 </div>
-                <button class="button tariff__button">
+                <button class="button tariff__button" type="submit">
                     Перейти к оплате
                 </button>
-            </div>
+            </form>
         </section>
     </main>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
