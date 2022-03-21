@@ -4,15 +4,10 @@
     background-color: #fff;
     border-radius: 40px;
     box-shadow: 0px 15px 30px rgba(80, 95, 182, 0.07);
-    
-    &--end,
-    &--confirm {
-        padding: 40px;
-        text-align: center;
-    }
 
     &__img-box {
-        margin: 0 auto;
+        width: fit-content;
+        margin: 0 auto 40px auto;
     }
 
     &__img {
@@ -29,13 +24,6 @@
 
         &--margin {
             margin-bottom: 15px;
-        }
-
-        &--end,
-        &--confirm {
-            margin-top: 40px;
-            margin-bottom: 10px;
-            line-height: 120%;
         }
     }
 
@@ -67,17 +55,6 @@
         max-width: 340px;
         width: 100%;
         margin: 0 auto;
-
-        &--width {
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-        }
-
-        &--end,
-        &--confirm {
-            max-width: unset;
-        }
 
         &--account {
             margin: 0;
@@ -156,10 +133,6 @@
     &__button {
         margin: 25px auto 0 auto;
 
-        &--end {
-            margin: 40px auto 0 auto;
-        }
-
         &--trial {
             width: 100%;
             padding: 0;
@@ -168,6 +141,21 @@
 
         &--tab {
             margin: 0 0 0 auto;
+        }
+    }
+
+    
+    &--div {
+        padding: 40px;
+
+        & .form__title {
+            margin-bottom: 15px;
+        }
+
+        & .form__content {
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
         }
     }
 }

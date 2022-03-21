@@ -10,6 +10,7 @@
     }
 
     &__form {
+        max-width: 920px;
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -19,6 +20,7 @@
     
 
     &__head {
+        max-width: 920px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -48,33 +50,32 @@
 
 
     &__table {
-        max-width: 712px;
+        border-collapse: collapse;
+
+        & thead {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            color: var(--grey-1);
+        }
+
+        & tbody {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: var(--grey-1);
+        }
 
         & tr {
-            padding: 20px 60px;
             border-bottom: 1px solid var(--line);
         }
-    }
 
-    &__name {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 100%;
-        color: var(--grey-1);
-
-        min-width: 140px;
-    }
-
-    &__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 100%;
-        color: var(--grey-1);
-
-        min-width: 140px;
-
-        &--time {
-            font-size: 12px;
+        & td {
+            padding: 20px 70px 20px 60px;
         }
+    }
+
+    &__time {
+        font-size: 12px;
     }
 }

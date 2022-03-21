@@ -1,7 +1,6 @@
 .profile {
     display: flex;
     align-items: center;
-    cursor: pointer;
     
     &__avatar {
         display: flex;
@@ -14,6 +13,7 @@
         border-radius: 50%;
         overflow: hidden;
         background-color: var(--violet-2);
+        cursor: pointer;
 
         &--empty {
             width: unset;
@@ -30,6 +30,7 @@
         line-height: 100%;
         color: var(--grey-1);
         margin-left: 10px;
+        cursor: pointer;
     }
 
     &__menu {
@@ -46,6 +47,7 @@
     }
 
     &__item {
+        cursor: pointer;
 
         &:first-child {
             margin-bottom: 12px;

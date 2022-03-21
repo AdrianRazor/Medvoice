@@ -191,34 +191,35 @@
                         <p class="profile__username">
                             Kseniia Vesta
                         </p>
-                    </div>
-                    <div class="profile__menu hidden">
-                        <ul class="profile__list">
-                            <li class="profile__item">
-                                <a class="profile__item-link" href="#">
-                                    <svg class="profile__icon" width="20" height="20">
-                                        <use xlink:href="img/sprite.svg#bookmarks"></use>
-                                    </svg>
-                                    <p class="profile__text">Закладки</p>
-                                </a>
-                            </li>
-                            <li class="profile__item">
-                                <a class="profile__item-link" href="#">
-                                    <svg class="profile__icon" width="20" height="20">
-                                        <use xlink:href="img/sprite.svg#profile"></use>
-                                    </svg>
-                                    <p class="profile__text">Профиль</p>
-                                </a>
-                            </li>
-                            <li class="profile__item">
-                                <a class="profile__item-link" href="#">
-                                    <svg class="profile__icon" width="20" height="20">
-                                        <use xlink:href="img/sprite.svg#exit"></use>
-                                    </svg>
-                                    <p class="profile__text">Выйти</p>
-                                </a>
-                            </li>
-                        </ul>
+
+                        <div class="profile__menu hidden">
+                            <ul class="profile__list">
+                                <li class="profile__item">
+                                    <a class="profile__item-link" href="#">
+                                        <svg class="profile__icon" width="20" height="20">
+                                            <use xlink:href="img/sprite.svg#bookmarks"></use>
+                                        </svg>
+                                        <p class="profile__text">Закладки</p>
+                                    </a>
+                                </li>
+                                <li class="profile__item">
+                                    <a class="profile__item-link" href="#">
+                                        <svg class="profile__icon" width="20" height="20">
+                                            <use xlink:href="img/sprite.svg#profile"></use>
+                                        </svg>
+                                        <p class="profile__text">Профиль</p>
+                                    </a>
+                                </li>
+                                <li class="profile__item">
+                                    <a class="profile__item-link" href="#">
+                                        <svg class="profile__icon" width="20" height="20">
+                                            <use xlink:href="img/sprite.svg#exit"></use>
+                                        </svg>
+                                        <p class="profile__text">Выйти</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -227,7 +228,7 @@
                 <section class="account">
                     <div class="account__head">
                         <ul class="account__list">
-                            <li class="account__item">
+                            <li class="account__item account__item--active">
                                 <svg class="account__icon" width="20" height="20">
                                     <use xlink:href="img/sprite.svg#personal"></use>
                                 </svg>
@@ -243,7 +244,7 @@
                                     Даннные авторизации
                                 </h2>
                             </li>
-                            <li class="account__item account__item--active">
+                            <li class="account__item">
                                 <svg class="account__icon" width="20" height="20">
                                     <use xlink:href="img/sprite.svg#pay"></use>
                                 </svg>
@@ -254,7 +255,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab">
+                    <div class="tab tab--active">
                         <form class="tab__form form" action="">
                             <div class="form__wrapper">
                                 <div class="form__avatar">
@@ -296,42 +297,42 @@
                                 </div>
                             </div>
 
-                            <button class="form__button--tab button" type="submit">
+                            <button class="form__button form__button--tab button" type="submit">
                                 Редактировать профиль
                             </button>
                         </form>
                     </div>
 
                     <div class="tab">
-                        <form class="tab__form" action="">
-                            <div class="tab__wrapper">    
-                                <div class="tab__block">
-                                    <p class="tab__row">
-                                        <label class="tab__label" for="password">Старый пароль пароль</label>
-                                        <input class="tab__field" type="password" name="password" id="password">
+                        <form class="tab__form form" action="">
+                            <div class="form__wrapper">    
+                                <div class="form__content form__content--account">
+                                    <p class="form__row">
+                                        <label class="form__label" for="password">Старый пароль пароль</label>
+                                        <input class="form__field" type="password" name="password" id="password">
                                     </p>
     
-                                    <p class="tab__row">
-                                        <label class="tab__label" for="password">Повторить пароль</label>
-                                        <input class="tab__field" type="password" name="password" id="password">
+                                    <p class="form__row">
+                                        <label class="form__label" for="password">Повторить пароль</label>
+                                        <input class="form__field" type="password" name="password" id="password">
                                     </p>
                                 </div>
     
-                                <div class="tab__block">
-                                    <p class="tab__row">
-                                        <label class="tab__label" for="newpassword">Новый пароль</label>
-                                        <input class="tab__field" type="password" name="newpassword" id="newpassword">
+                                <div class="form__content form__content--account">
+                                    <p class="form__row">
+                                        <label class="form__label" for="newpassword">Новый пароль</label>
+                                        <input class="form__field" type="password" name="newpassword" id="newpassword">
                                     </p>
                                 </div>
                             </div>
 
-                            <button class="tab__button button" type="submit">
+                            <button class="form__button form__button--tab button" type="submit">
                                 Сохранить
                             </button>
                         </form>
                     </div>
 
-                    <div class="tab tab--active">
+                    <div class="tab">
                         <div class="tab__head">
                             <div class="tab__title-box">
                                 <h3 class="tab__title">
@@ -357,55 +358,55 @@
                         <table class="tab__table">
                             <thead>
                                 <tr>
-                                    <td class="tab__name">Дата транзакции</td>
-                                    <td class="tab__name">Тип подписки</td>
-                                    <td class="tab__name">Сумма</td>
+                                    <td>Дата транзакции</td>
+                                    <td>Тип подписки</td>
+                                    <td>Сумма</td>
                                 </tr>
                             </thead>
 
                             <tbody>
                                 <tr>
-                                    <td class="tab__text">
+                                    <td>
                                         10/20/2021
                                         <span class="tab__time">
                                             19:00 PM
                                         </span>
                                     </td>
-                                    <td class="tab__text">1 месяц</td>
-                                    <td class="tab__text">270 грн</td>
+                                    <td>1 месяц</td>
+                                    <td>270 грн</td>
                                 </tr>
 
                                 <tr>
-                                    <td class="tab__text">
+                                    <td>
                                         10/20/2021
                                         <span class="tab__time">
                                             19:00 PM
                                         </span>
                                     </td>
-                                    <td class="tab__text">12 месяцев</td>
-                                    <td class="tab__text">2600 грн</td>
+                                    <td>12 месяцев</td>
+                                    <td>2600 грн</td>
                                 </tr>
 
                                 <tr>
-                                    <td class="tab__text">
+                                    <td>
                                         10/20/2021
                                         <span class="tab__time">
                                             19:00 PM
                                         </span>
                                     </td>
-                                    <td class="tab__text">1 месяц</td>
-                                    <td class="tab__text">270 грн</td>
+                                    <td>1 месяц</td>
+                                    <td>270 грн</td>
                                 </tr>
 
                                 <tr>
-                                    <td class="tab__text">
+                                    <td>
                                         10/20/2021
                                         <span class="tab__time">
                                             19:00 PM
                                         </span>
                                     </td>
-                                    <td class="tab__text">1 месяц</td>
-                                    <td class="tab__text">270 грн</td>
+                                    <td>1 месяц</td>
+                                    <td>270 грн</td>
                                 </tr>
                             </tbody>
                         </table>

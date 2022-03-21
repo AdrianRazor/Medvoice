@@ -16,19 +16,22 @@
         margin-top: 25px;
     }
 
+    &--back {
+        
+        & a {
+            display: flex;
+            align-items: center;
+        }
+
+        & svg {
+            fill: var(--violet-1);
+            margin-right: 10px;
+        }
+    }
+
     &--size {
         font-size: 16px;
         line-height: 120%;
         text-align: center;
-    }
-
-    &__link {
-        display: flex;
-        align-items: center;
-    }
-
-    &__arrow {
-        fill: var(--violet-1);
-        margin-right: 10px;
     }
 }

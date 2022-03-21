@@ -73,6 +73,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
+    // Табы
+    let tabName = document.querySelectorAll('.account__item');
+    let tab = document.querySelectorAll('.tab');
+
+    if(tab) {
+        tabName.forEach(function (item) {
+            item.addEventListener ('click', function () {
+                for (let i = 0; i < tabName.length; i++) {
+                    tabName[i].classList.remove('account__item--active');
+                    tab[i].classList.remove('tab--active');
+                };
+                item.classList.add('account__item--active');
+        
+                for (let j = 0; j < tabName.length; j++) {
+                    if (tabName[j].classList.contains('account__item--active')) {
+                        tab[j].classList.add('tab--active');
+                    }
+                };
+            });
+        });
+    }
+
+
 
     console.log("DOM fully loaded and parsed");
 });
