@@ -1,4 +1,4 @@
-.header-profile {
+.profile {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -69,12 +69,12 @@
         }
 
         &:hover {
-            & .header-profile__icon {
+            & .profile__icon {
                 fill: var(--violet-1);
                 transition: all 0.2s ease;
             }
         
-            & .header-profile__text {
+            & .profile__text {
                 color: var(--violet-1);
                 transition: all 0.2s ease;
             }

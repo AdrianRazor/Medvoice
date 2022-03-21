@@ -39,6 +39,30 @@
         }
     }
 
+    &__wrapper {
+        display: flex;
+        margin-bottom: 40px;
+        min-height: 232px;
+    }
+
+    &__avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 100px;
+        height: 100px;
+        margin-right: 40px;
+        border: 2px solid var(--violet-1);
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--violet-2);
+
+        &-img {
+            height: 100%;
+        }
+    }
+
     &__content {
         max-width: 340px;
         width: 100%;
@@ -53,6 +77,14 @@
         &--end,
         &--confirm {
             max-width: unset;
+        }
+
+        &--account {
+            margin: 0;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
         }
     }
 
@@ -132,6 +164,10 @@
             width: 100%;
             padding: 0;
             justify-content: center;
+        }
+
+        &--tab {
+            margin: 0 0 0 auto;
         }
     }
 }
