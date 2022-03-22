@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       if (editProfileButton && cancelProfileButton) {
         const tabFormButtonBox = tabForm.querySelector('.form__button-box');
 
-        const tabFormInputs = tabForm.querySelectorAll('.form__field');
+        const tabFormRows = tabForm.querySelectorAll('.form__row');
 
         const tabFormAvatar = tabForm.querySelector('.form__avatar');
 
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
         if (valueReadonly) {
-          tabFormInputs.forEach(el => el.readOnly = true);
+          tabFormRows.forEach(el => el.classList.add('disabled'));
 
           editProfileButton.classList.remove('hidden');
 
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             uploadImageButton.classList.add('hidden');
           }
         } else {
-          tabFormInputs.forEach(el => el.readOnly = false);
+          tabFormRows.forEach(el => el.classList.remove('disabled'));
 
           editProfileButton.classList.add('hidden');
 
