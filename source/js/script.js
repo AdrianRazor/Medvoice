@@ -95,6 +95,40 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     }
 
+    // Редактирование профиля
+    let tabForm = document.querySelector('.tab__form');
+    let editProfileButton = document.querySelector('.form__button--tab');
+
+    let tabFormButtonBox = document.querySelector('.form__button-box');
+    let saveProfileButton = document.querySelector('.button--save');
+
+    let tabFormAvatar = document.querySelector('.form__avatar');
+    let uploadImageButton = tabFormAvatar.querySelector('.form__row');
+
+    if(tabForm) {
+        let tabFormInputs = tabForm.querySelectorAll('.form__field');
+
+        editProfileButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            tabFormInputs.forEach(el => el.removeAttribute("readonly"));
+            editProfileButton.classList.add('hidden');
+            tabFormButtonBox.classList.remove('hidden');
+            uploadImageButton.classList.remove('hidden');
+        })
+
+        if(tabFormButtonBox) {
+            saveProfileButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                tabFormInputs.forEach(el => el.setAttribute("readonly", true));
+                tabFormButtonBox.classList.add('hidden');
+                editProfileButton.classList.remove('hidden');
+                uploadImageButton.classList.add('hidden');
+            })
+        }
+    }
+
+
+
 
 
     console.log("DOM fully loaded and parsed");

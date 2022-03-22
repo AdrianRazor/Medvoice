@@ -28,4 +28,12 @@
         border: 1px solid var(--turquoise-1);
         color: var(--turquoise-1);
     }
+
+    &--cancel {
+        margin-right: 40px;
+        padding: 0;
+        min-height: unset;
+        background-color: transparent;
+        color: var(--grey-3);
+    }
 }

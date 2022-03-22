@@ -256,50 +256,64 @@
                     </div>
 
                     <div class="tab tab--active">
-                        <form class="tab__form form" action="">
+                        <form class="tab__form tab__form--locked form" action="">
                             <div class="form__wrapper">
                                 <div class="form__avatar">
-                                    <img class="form__avatar-img" src="img/avatar.jpg" alt="avatar">
+                                    <div class="form__avatar-box">
+                                        <img class="form__avatar-img" src="img/avatar.jpg" alt="avatar">
+                                    </div>
+                                    <p class="form__row hidden">
+                                        <label class="form__upload" for="photo"></label>
+                                        <input type="file" id="photo" name="photo" hidden>
+                                    </p>
                                 </div>
     
                                 <div class="form__content form__content--account">
                                     <p class="form__row">
                                         <label class="form__label" for="nickname">Имя</label>
-                                        <input class="form__field" type="text" name="nickname" id="nickname" placeholder="Введите ваше имя">
+                                        <input class="form__field" type="text" name="nickname" id="nickname" placeholder="Введите ваше имя" value="Ксения" readonly>
                                     </p>
     
                                     <p class="form__row">
                                         <label class="form__label" for="surname">Фамилия</label>
-                                        <input class="form__field" type="text" name="surname" id="surname" placeholder="Введите вашу фамилию">
+                                        <input class="form__field" type="text" name="surname" id="surname" placeholder="Введите вашу фамилию" value="Веста" readonly>
                                     </p>
     
                                     <p class="form__row">
                                         <label class="form__label" for="mail">Email</label>
-                                        <input class="form__field" type="text" name="mail" id="mail" placeholder="Введите вашу почту">
+                                        <input class="form__field" type="text" name="mail" id="mail" placeholder="Введите вашу почту" value="vesta.kvesta@gmail.com" readonly>
                                     </p>
                                 </div>
     
                                 <div class="form__content form__content--account">
                                     <p class="form__row">
                                         <label class="form__label" for="nickname">Специальность</label>
-                                        <input class="form__field" type="text" name="nickname" id="nickname" placeholder="Выберите специальность">
+                                        <input class="form__field" type="text" name="nickname" id="nickname" placeholder="Выберите специальность" value="Хирург" readonly>
                                     </p>
     
                                     <p class="form__row">
                                         <label class="form__label" for="surname">Страна</label>
-                                        <input class="form__field" type="text" name="surname" id="surname" placeholder="Укажите свою страну">
+                                        <input class="form__field" type="text" name="surname" id="surname" placeholder="Укажите свою страну" value="Украина" readonly>
                                     </p>
     
                                     <p class="form__row">
                                         <label class="form__label" for="mail">Регион</label>
-                                        <input class="form__field" type="text" name="mail" id="mail" placeholder="Укажите свой город">
+                                        <input class="form__field" type="text" name="mail" id="mail" placeholder="Укажите свой город" value="Киев" readonly>
                                     </p>
                                 </div>
                             </div>
 
-                            <button class="form__button form__button--tab button" type="submit">
+                            <button class="form__button form__button--tab button">
                                 Редактировать профиль
                             </button>
+                            <div class="form__button-box hidden">
+                                <button class="button button--cancel">
+                                    Отменить
+                                </button>
+                                <button class="button button--save">
+                                    Сохранить
+                                </button>
+                            </div>
                         </form>
                     </div>
 

@@ -14,3 +14,5 @@
 ### https://adrianrazor.github.io/Medvoice/build/user-trial.html
 ###
 ### https://adrianrazor.github.io/Medvoice/build/tariff.html
+###
+### https://adrianrazor.github.io/Medvoice/build/account.html
