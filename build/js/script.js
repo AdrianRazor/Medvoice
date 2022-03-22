@@ -153,6 +153,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             event.preventDefault();
 
             window.toggleReadonlyAttr(tabForm, true);
+
+            window.location.reload();
           })
         }
       }
