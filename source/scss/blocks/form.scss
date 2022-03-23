@@ -169,6 +169,16 @@
         }
     }
 
+    &__select {
+        width: 100%;
+        min-height: 40px;
+        border-radius: 30px;
+        border: 1px solid var(--line);
+        background-color: var(--background);
+        padding: 0 15px;
+        margin-top: 10px;
+    }
+
     &__text {
         margin-top: 10px;
         text-align: right;
