@@ -181,6 +181,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   if (selectItem) {
+    window.addEventListener('click', e => {
+      const target = e.target;
+      let select = document.querySelectorAll('.select');
+
+      select.forEach(item => {
+        if (!target.closest('.select--active')) {
+          item.classList.remove('select--active');
+        }
+      })
+    })
+  }
+
+  if (selectItem) {
     selectItem.forEach(item => {
       item.addEventListener('click', function() {
         let text = this.innerText,
@@ -191,6 +204,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       })
     });
   }
+
+  
 
   
 
