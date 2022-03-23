@@ -164,6 +164,11 @@
         padding: 0 15px;
         margin-top: 10px;
 
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--grey-1);
+
         &:read-only {
             border: 1px solid transparent;
         }

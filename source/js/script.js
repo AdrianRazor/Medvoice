@@ -167,5 +167,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+
+  // Селект
+  let selectHeader = document.querySelectorAll('.select__header');
+  let selectItem = document.querySelectorAll('.select__item');
+
+  if (selectHeader) {
+    selectHeader.forEach(item => {
+      item.addEventListener('click', function() {
+        this.parentElement.classList.toggle('select--active');
+      })
+    });
+  }
+
+  if (selectItem) {
+    selectItem.forEach(item => {
+      item.addEventListener('click', function() {
+        let text = this.innerText,
+            select = this.closest('.select'),
+            currentText = select.querySelector('.select__current');
+        currentText.innerText = text;
+        select.classList.remove('select--active');
+      })
+    });
+  }
+
+  
+
+
   console.log("DOM fully loaded and parsed");
 });

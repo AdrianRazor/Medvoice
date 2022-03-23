@@ -310,29 +310,49 @@
                 </div>
 
                 <div class="form__content form__content--account">
-                  <p class="form__row">
-                    <label class="form__label" for="special">Специализация</label>
-                    <select class="form__select" name="special" id="special">
-                      <option value="1">Хирург</option>
-                      <option value="2">Терапевт</option>
-                      <option value="3">Эндокринолог</option>
-                    </select>
-                  </p>
+                  <div class="form__row select">
+                    <label class="form__label">Специальность</label>
+                    <div class="select__header">
+                      <span class="select__current">Хирург</span>
+                      <svg class="select__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+                  
+                    <ul class="select__body">
+                      <li class="select__item">Хирург</li>
+                      <li class="select__item">Детская стоматология</li>
+                      <li class="select__item">Взрослая стоматология</li>
+                      <li class="select__item">Нейрохирургия</li>
+                      <li class="select__item">Пластическая хирургия</li>
+                      <li class="select__item">Долгожители</li>
+                      <li class="select__item">Генетика детей</li>
+                    </ul>
+                  </div>
 
-                  <p class="form__row">
-                    <label class="form__label" for="country">Страна</label>
-                    <select class="form__select" name="special" id="special">
-                      <option value="1">Украина</option>
-                      <option value="2">США</option>
-                      <option value="3">Германия</option>
-                    </select>
-                  </p>
+                  <div class="form__row select">
+                    <label class="form__label">Страна</label>
+                    <div class="select__header">
+                      <span class="select__current">Украина</span>
+                      <svg class="select__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+                  
+                    <ul class="select__body">
+                      <li class="select__item">Украина</li>
+                      <li class="select__item">Польша</li>
+                      <li class="select__item">Германия</li>
+                      <li class="select__item">Австрия</li>
+                      <li class="select__item">Чехия</li>
+                    </ul>
+                  </div>
 
-                  <p class="form__row">
+                  <div class="form__row">
                     <label class="form__label" for="region">Регион</label>
                     <input class="form__field" type="text" name="region" id="region" placeholder="Укажите свой город"
                       value="Киев">
-                  </p>
+                  </div>
                 </div>
               </div>
 
