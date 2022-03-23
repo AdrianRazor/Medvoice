@@ -16,11 +16,10 @@
         cursor: pointer;
 
         &--empty {
-            width: unset;
-            height: unset;
+            width: 30px;
+            height: 30px;
             background-color: transparent;
             border: none;
-            border-radius: unset;
         }
     }
 

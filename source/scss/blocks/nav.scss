@@ -20,19 +20,20 @@
     }
 
     &__wrapper {
-        margin-bottom: 190px;
+        margin-bottom: 159px;
     }
     
     &__item {
+        position: relative;
         border-radius: 20px;
 
         &:not(:last-child) {
             margin-bottom: 4px;
         }
 
-        &:nth-child(5) {
+        &:last-child {
             position: relative;
-            margin-bottom: 21px;
+            margin-bottom: 32px;
 
             &::after {
                 content: '';
@@ -42,7 +43,7 @@
                 background-color: var(--line);
 
                 position: absolute;
-                bottom: -11px;
+                bottom: -20px;
                 left: 0;
             }
         }
@@ -86,6 +87,74 @@
         transition: all 0.2s ease;
     }
 
+    &__flag {
+        display: none;
+        padding: 10px 11px;
+        background-color: var(--violet-1);
+        border-radius: 8px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        color: #FFFFFF;
+
+        position: absolute;
+        top: 0;
+        left: 46px;
+        z-index: 10;
+
+        &::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-color: var(--violet-1);
+            border-radius: 2px;
+
+            position: absolute;
+            top: 50%;
+            left: -4px;
+            transform: translateY(-50%) rotate(45deg);
+            z-index: 5;
+        }
+    }
+
+    &__lang-list {
+        display: flex;
+        margin-left: 13px;
+    }
+
+    &__lang-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border-radius: 50%;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+
+        & a {
+            color: var(--grey-1);
+        }
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        &--active {
+            font-weight: 700;
+            background-color: var(--violet-4);
+
+            & a {
+                color: var(--violet-1);
+            }
+        }
+    }
+
     // Текущая ссылка в навигации
     &__item--active {
         & .nav__text {
@@ -114,7 +183,11 @@
 
     // Свёрнутая навигация
     &--minimize {
-        padding: 25px 11px 25px 12px;
+        padding: 25px 11px 0 12px;
+
+        & .nav__wrapper {
+            margin-bottom: 108px;
+        }
 
         & .logo--nav {
             justify-content: center;
@@ -130,6 +203,10 @@
             transform: rotate(180deg);
         }
 
+        & .nav__item:hover .nav__flag {
+            display: block;
+        }
+
         & .nav__item-link {
             padding: 8px;
         }
@@ -141,6 +218,20 @@
         & .nav__text {
             display: none;
         }
-        
+
+        & .nav__lang-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+        }
+    
+        & .nav__lang-link {
+    
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+        }
     }
 }
