@@ -1,0 +1,72 @@
+.catalog {
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__amount {
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--grey-1);
+    }
+
+    &__x-icon {
+        cursor: pointer;
+        margin-left: 15px;
+        fill: var(--violet-2);
+        transition: all 0.2s ease;
+
+        &:hover {
+            fill: var(--violet-1);
+            transition: all 0.2s ease;
+        }
+    }
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    &__icon-row {
+        cursor: pointer;
+        fill: var(--grey-2);
+        transition: all 0.2s ease;
+        margin-right: 15px;
+
+        &:hover {
+            fill: var(--violet-1);
+            transition: all 0.2s ease;
+        }
+    }
+
+    &__icon-grid {
+        cursor: pointer;
+        fill: var(--grey-2);
+        transition: all 0.2s ease;
+        
+        &:hover {
+            fill: var(--violet-1);
+            transition: all 0.2s ease;
+        }
+    }
+
+
+
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__cards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 20px;
+    }
+}

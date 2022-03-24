@@ -1,5 +1,5 @@
 .banner {
-    padding: 60px 0;
+    padding: 40px;
     background: linear-gradient(95.01deg, #98B0ED 0%, #D3E8FF 48.37%, #CFFFFC 100%);
     border-radius: 40px;
     margin-bottom: 60px;
@@ -10,6 +10,11 @@
     justify-content: center;
     align-items: center;
 
+    &--catalog {
+        min-height: 240px;
+        background: linear-gradient(95.01deg, #A39CEF 0%, #D2D4FF 52.54%, #D0E0FF 100%);
+    }
+
     &__title {
         font-weight: 700;
         font-size: 44px;
@@ -19,6 +24,17 @@
         color: var(--grey-1);
 
         max-width: 670px;
+    }
+
+    &__description {
+        max-width: 450px;
+        margin-top: 15px;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: var(--grey-1);
     }
 
     &__form {

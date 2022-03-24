@@ -27,45 +27,6 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 40px 20px;
     }
-
-    &__pagination {
-        margin-top: 60px;
-    }
-    
-    &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
-
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-        color: var(--violet-1);
-
-        &:not(:last-child) {
-            margin-right: 25px;
-        }
-
-        &--disabled {
-            color: var(--violet-3);
-        }
-    }
-
-    &__arrow-prev {
-        fill: var(--violet-3);
-        margin-right: 10px;
-    }
-
-    &__arrow-next {
-        fill: var(--violet-1);
-        margin-left: 10px;
-    }
 }
 
 @media (min-width: 1500px) {

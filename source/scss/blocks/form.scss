@@ -223,5 +223,11 @@
             text-align: center;
         }
     }
+
+    &--filter {
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
 }
 
