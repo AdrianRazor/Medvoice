@@ -224,6 +224,53 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Фильтр на странице "Каталог"
+  let buttonFilter = document.querySelector('.button--filter');
+
+  if(buttonFilter) {
+    let filterBlock = document.querySelector('.catalog__filter');
+
+    buttonFilter.addEventListener('click', function() {
+      filterBlock.classList.toggle('hidden');
+    })
+  }
+
+  // Чекбоксы
+  let dropdownHead = document.querySelectorAll('.dropdown__header');
+
+  if (dropdownHead) {
+    dropdownHead.forEach(item => {
+      item.addEventListener('click', function() {
+        this.parentElement.classList.toggle('dropdown--active');
+      });
+    });
+  }
+
+  // Вид карточек на странице "Каталог"
+  let iconRow = document.querySelector('.catalog__icon-row');
+  let iconGrid = document.querySelector('.catalog__icon-grid');
+
+  let catalogCards = document.querySelector('.catalog__cards');
+  let cards = document.querySelectorAll('.card');
+
+  if(catalogCards) {
+    iconRow.addEventListener('click', function() {
+      catalogCards.classList.add('catalog__cards--row');
+      cards.forEach(item => {
+        item.classList.add('card--row');
+      });
+    });
+
+    iconGrid.addEventListener('click', function() {
+      catalogCards.classList.remove('catalog__cards--row');
+      cards.forEach(item => {
+        item.classList.remove('card--row');
+      });
+    });
+  }
+
+
+
 
 
 
