@@ -99,8 +99,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let tabForms = document.querySelectorAll('.tab__form');
 
   if (tabForms.length > 0) {
-    // window - перфикс, отличающий глобальные ф-и, которые видны из других файлов
-    window.toggleReadonlyAttr = (tabForm, valueReadonly = true, init = false) => {
+    const toggleReadonlyAttr = (tabForm, valueReadonly = true, init = false) => {
       const editProfileButton = tabForm.querySelector('.form__button--tab');
       const cancelProfileButton = tabForm.querySelector('.button--cancel');
 
@@ -146,13 +145,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
           editProfileButton.addEventListener('click', function (event) {
             event.preventDefault();
 
-            window.toggleReadonlyAttr(tabForm, false);
+            toggleReadonlyAttr(tabForm, false);
           })
 
           cancelProfileButton.addEventListener('click', function (event) {
             event.preventDefault();
 
-            window.toggleReadonlyAttr(tabForm, true);
+            toggleReadonlyAttr(tabForm, true);
 
             window.location.reload();
           })
@@ -163,36 +162,69 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Перебираем все формы
     tabForms.forEach(tabForm => {
       // Инициализируем кнопки-переключатели
-      window.toggleReadonlyAttr(tabForm, true, true);
+      toggleReadonlyAttr(tabForm, true, true);
     });
   }
 
 
   // Селект
-  let selectHeader = document.querySelectorAll('.select__header');
-  let selectItem = document.querySelectorAll('.select__item');
+  const selects = document.querySelectorAll('.select');
 
-  if (selectHeader) {
-    selectHeader.forEach(item => {
-      item.addEventListener('click', function() {
-        this.parentElement.classList.toggle('select--active');
-      })
+  if (selects.length > 0) {
+    selects.forEach(select => {
+      const selectHeader = select.querySelector('.select__header');
+      const selectItems = select.querySelectorAll('.select__item');
+      const selectField = select.querySelector('.select__field');
+
+      if (selectHeader && selectField && selectItems.length > 0) {
+        const selectOptions = selectField.querySelectorAll('option');
+
+        selectHeader.addEventListener('click', function () {
+          select.classList.toggle('select--active');
+        })
+
+        selectItems.forEach(selectItem => {
+          selectItem.addEventListener('click', function () {
+            const itemText = selectItem.textContent,
+              currentText = select.querySelector('.select__current'),
+              itemValue = selectItem.dataset.value ?? -1;
+
+            selectOptions.forEach(selectOption => {
+              if (selectOption.value === itemValue) {
+                selectOption.selected = true;
+                selectField.classList.add('selected');
+              }
+            });
+
+            currentText.textContent = itemText;
+
+            select.classList.remove('select--active');
+          })
+        });
+
+        selectOptions.forEach(selectOption => {
+          if (selectOption.selected === true) {
+            selectItems.forEach(selectItem => {
+              if (selectItem.dataset.value === selectOption.value) {
+                selectItem.click();
+              }
+            });
+          }
+        });
+
+        window.addEventListener('click', e => {
+          if (
+            e.target.closest('.select') !== select &&
+            select.classList.contains('select--active')
+          ) {
+            select.classList.remove('select--active');
+          }
+        })
+      }
     });
   }
 
-  if (selectItem) {
-    selectItem.forEach(item => {
-      item.addEventListener('click', function() {
-        let text = this.innerText,
-            select = this.closest('.select'),
-            currentText = select.querySelector('.select__current');
-        currentText.innerText = text;
-        select.classList.remove('select--active');
-      })
-    });
-  }
 
-  
 
 
   console.log("DOM fully loaded and parsed");

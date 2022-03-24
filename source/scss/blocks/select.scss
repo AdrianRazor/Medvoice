@@ -2,8 +2,11 @@
 	position: relative;
     width: 100%;
 
-    &:not(:first-of-type) {
-        margin-top: 15px;
+    // &:not(:first-of-type) {
+    //     margin-top: 15px;
+    // }
+    &__field {
+      display: none;
     }
     
     &__header {
