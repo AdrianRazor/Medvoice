@@ -15,6 +15,16 @@
         background: linear-gradient(95.01deg, #A39CEF 0%, #D2D4FF 52.54%, #D0E0FF 100%);
     }
 
+    &--author {
+        min-height: 240px;
+        background: linear-gradient(95.01deg, #89CDFE 0%, #AED8FF 49.42%, #D9F1FF 100%);
+        
+        padding-bottom: 0;
+        padding-left: 95px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
     &__title {
         font-weight: 700;
         font-size: 44px;
@@ -72,5 +82,68 @@
 
     &__link {
         margin-top: 40px;
+    }
+
+
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__avatar {
+        width: 80px;
+        height: 80px;
+        margin-right: 25px;
+        border: 2px solid var(--violet-1);
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--violet-2);
+    }
+
+    &__avatar-img {
+        height: 100%;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        color: var(--grey-1);
+        margin-bottom: 10px;
+    }
+
+    &__special {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: var(--grey-1);
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        cursor: pointer;
+        padding: 10px 0 20px 0;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s ease;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        color: var(--grey-1);
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &:hover {
+            color: var(--violet-1);
+            border-bottom: 2px solid var(--violet-1);
+            transition: all 0.2s ease;
+        }
     }
 }

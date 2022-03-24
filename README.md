@@ -2,6 +2,10 @@
 # https://adrianrazor.github.io/Medvoice/build/index.html
 
 ### https://adrianrazor.github.io/Medvoice/build/search.html
+### https://adrianrazor.github.io/Medvoice/build/author.html
+### https://adrianrazor.github.io/Medvoice/build/account.html
+### https://adrianrazor.github.io/Medvoice/build/catalog.html
+###
 ###
 ### https://adrianrazor.github.io/Medvoice/build/user-check.html
 ### https://adrianrazor.github.io/Medvoice/build/user-confirm.html
@@ -15,4 +19,4 @@
 ###
 ### https://adrianrazor.github.io/Medvoice/build/tariff.html
 ###
-### https://adrianrazor.github.io/Medvoice/build/account.html
+
