@@ -29,6 +29,11 @@
         margin-top: 25px;
     }
 
+    &__btn {
+        display: flex;
+        background-color: transparent;
+    }
+
     &__btn-prev {
         cursor: pointer;
         fill: var(--violet-1);

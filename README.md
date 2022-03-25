@@ -6,6 +6,7 @@
 ### https://adrianrazor.github.io/Medvoice/build/account.html
 ### https://adrianrazor.github.io/Medvoice/build/catalog.html
 ### https://adrianrazor.github.io/Medvoice/build/course.html
+### https://adrianrazor.github.io/Medvoice/build/lection.html
 ###
 ###
 ### https://adrianrazor.github.io/Medvoice/build/user-check.html

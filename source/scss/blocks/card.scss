@@ -14,7 +14,7 @@
     }
 
     &__link-box {
-        max-height: 160px;
+        height: 160px;
         position: relative;
         overflow: hidden;
         border-top-left-radius: 20px;
@@ -54,7 +54,7 @@
         transform: translateX(-50%) translateY(-50%);
         z-index: 10;
 
-        &-icon {
+        & svg {
             fill: var(--violet-1);
         }
 
@@ -89,6 +89,10 @@
         &-link {
             display: flex;
             background-color: transparent;
+
+            &--block {
+                pointer-events: none;
+            }
         }
         
         &-name {
@@ -106,7 +110,7 @@
             color: var(--grey-2);
         }
 
-        &-icon {
+        & svg {
             stroke: var(--violet-1);
             fill: transparent;
             
@@ -130,8 +134,8 @@
         flex-direction: row;
 
         & .card__link-box {
-            max-width: 240px;
-            max-height: 160px;
+            width: 240px;
+            height: 160px;
             border-top-right-radius: 0;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
@@ -141,5 +145,9 @@
             padding: 20px;
             height: unset;
         }
+    }
+
+    &--block {
+        pointer-events: none;
     }
 }
