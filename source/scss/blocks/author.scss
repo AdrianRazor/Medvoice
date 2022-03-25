@@ -1,0 +1,19 @@
+.author {
+    &__tab {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__text {
+        max-width: 675px;
+        padding-left: 95px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--grey-1);
+    }
+}

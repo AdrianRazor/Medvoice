@@ -269,6 +269,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Табы на странице "Автор"
+  let authorTabName = document.querySelectorAll('.banner__item');
+  let authorTab = document.querySelectorAll('.author__tab');
+
+  if (authorTab) {
+    authorTabName.forEach(function (item) {
+      item.addEventListener('click', function () {
+        for (let i = 0; i < authorTabName.length; i++) {
+          authorTabName[i].classList.remove('banner__item--active');
+          authorTab[i].classList.remove('author__tab--active');
+        };
+        item.classList.add('banner__item--active');
+
+        for (let j = 0; j < authorTabName.length; j++) {
+          if (authorTabName[j].classList.contains('banner__item--active')) {
+            authorTab[j].classList.add('author__tab--active');
+          }
+        };
+      });
+    });
+  }
+
 
 
 
