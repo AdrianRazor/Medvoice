@@ -1,0 +1,108 @@
+.side {
+    width: 385px;
+    height: 650px;
+    flex-shrink: 0;
+    background-color: #fff;
+    padding: 40px 20px;
+    overflow-y: auto;
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--grey-1);
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        height: 80px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__video {
+        min-width: 140px;
+        height: 80px;
+        border-radius: 15px;
+        position: relative;
+        margin-right: 15px;
+        overflow: hidden;
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-color: var(--violet-4);
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 10;
+
+        & svg {
+            fill: var(--violet-1);
+        }
+    }
+
+    &__info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        color: var(--grey-1);
+    }
+
+    &__author {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--grey-2);
+        margin-bottom: 5px;
+    }
+
+    &__duration {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        color: var(--grey-2);
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+
+        &-track {
+            background: var(--grey-4);
+        }
+        
+        &-thumb {
+            background: var(--grey-3);
+            border-radius: 5px;
+        }
+        
+        &-thumb:hover {
+            background: var(--grey-2);
+        }
+    }
+    
+}

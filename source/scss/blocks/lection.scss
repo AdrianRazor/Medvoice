@@ -1,15 +1,16 @@
 .main-lection {
-    padding: 40px 20px 100px 20px;
+    padding: 0;
     display: flex;
 }
 
 .lection {
-    margin-right: 20px;
+    padding: 40px 20px 100px 20px;
 
     &__head {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 15px;
     }
 
     &__breadcrumb {
@@ -44,6 +45,9 @@
     }
 
     &__icon {
+        display: flex;
+        background-color: transparent;
+
         & svg {
             cursor: pointer;
             fill: none;
@@ -63,25 +67,81 @@
     }
 
     &__video {
+        position: relative;
         height: 380px;
+        margin-bottom: 25px;
     }
 
     &__img {
         height: 100%;
         border-radius: 40px;
         overflow: hidden;
+        cursor: pointer;
+    }
+
+    &__btn {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: var(--violet-4);
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        padding-left: 37px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 10;
+
+        & svg {
+            fill: var(--violet-1);
+        }
     }
 
     &__tags {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
     }
+
     &__tag {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
     }
+
     &__description {
+        width: 100%;
+        border-bottom: 2px solid var(--line);
+        margin-bottom: 20px;
     }
+
     &__description-text {
+        position: relative;
+        width: fit-content;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--violet-1);
+        margin-bottom: -2px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        color: var(--grey-1);
     }
+
     &__info {
+        display: flex;
+        align-items: flex-start;
     }
+
     &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--grey-1);
+        margin-right: 25px;
     }
 }
