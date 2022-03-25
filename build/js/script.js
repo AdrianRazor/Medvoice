@@ -291,6 +291,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Табы на странице "Курс"
+  let courseTabName = document.querySelectorAll('.banner__item');
+  let courseTab = document.querySelectorAll('.course__tab');
+
+  if (courseTab) {
+    courseTabName.forEach(function (item) {
+      item.addEventListener('click', function () {
+        for (let i = 0; i < courseTabName.length; i++) {
+          courseTabName[i].classList.remove('banner__item--active');
+          courseTab[i].classList.remove('course__tab--active');
+        };
+        item.classList.add('banner__item--active');
+
+        for (let j = 0; j < courseTabName.length; j++) {
+          if (courseTabName[j].classList.contains('banner__item--active')) {
+            courseTab[j].classList.add('course__tab--active');
+          }
+        };
+      });
+    });
+  }
+
 
 
 

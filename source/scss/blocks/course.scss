@@ -1,0 +1,38 @@
+.course {
+    &__tab {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__about {
+        padding-left: 95px;
+        padding-right: 95px;
+        display: flex;
+    }
+
+    &__info {
+        margin-right: 40px;
+    }
+
+    &__tag-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__tag {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--grey-1);
+    }
+}

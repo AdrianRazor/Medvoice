@@ -48,4 +48,11 @@
             transition: all 0.2s ease;
         }
     }
+
+    &--tag {
+        min-height: 30px;
+        padding: 0 10px;
+        background-color: var(--violet-1);
+        font-weight: 400;
+    }
 }
