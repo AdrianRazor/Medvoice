@@ -85,15 +85,6 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-
-        &-link {
-            display: flex;
-            background-color: transparent;
-
-            &--block {
-                pointer-events: none;
-            }
-        }
         
         &-name {
             font-weight: 500;
@@ -108,15 +99,6 @@
             font-size: 14px;
             line-height: 100%;
             color: var(--grey-2);
-        }
-
-        & svg {
-            stroke: var(--violet-1);
-            fill: transparent;
-            
-            &--save {
-                fill: var(--violet-1);
-            }
         }
     }
 
