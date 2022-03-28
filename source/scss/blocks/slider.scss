@@ -20,6 +20,12 @@
         font-size: 16px;
         line-height: 100%;
         color: var(--violet-1);
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: var(--violet-2);
+            transition: all 0.2s ease;
+        }
     }
 
     &__btn-box {
@@ -37,15 +43,27 @@
     &__btn-prev {
         cursor: pointer;
         fill: var(--violet-1);
+        transition: all 0.2s ease;
         margin-right: 15px;
+
+        &:hover {
+            fill: var(--violet-2);
+            transition: all 0.2s ease;
+        }
     }
 
     &__btn-next {
         cursor: pointer;
         fill: var(--violet-1);
+
+        &:hover {
+            fill: var(--violet-2);
+            transition: all 0.2s ease;
+        }
     }
 }
 
 .swiper-button-disabled {
+    pointer-events: none;
     fill: var(--violet-3);
 }

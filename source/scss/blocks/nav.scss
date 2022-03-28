@@ -15,7 +15,15 @@
         margin-bottom: 15px;
 
         &-arrow {
-            fill: var(--violet-2);
+            fill: var(--violet-1);
+            transition: all 0.2s ease;
+        }
+
+        &:hover {
+            & .nav__btn-arrow {
+                fill: var(--violet-2);
+                transition: all 0.2s ease;
+            }
         }
     }
 
@@ -24,7 +32,6 @@
     }
     
     &__item {
-        position: relative;
         border-radius: 20px;
 
         &:not(:last-child) {
@@ -124,36 +131,38 @@
     }
 
     &__lang-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border-radius: 50%;
-
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 100%;
-
         & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            border-radius: 50%;
+
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;
             color: var(--grey-1);
+            transition: all 0.2s ease;
+            
+            &:hover {
+                color: var(--violet-1);
+                transition: all 0.2s ease;
+            }
         }
 
         &:not(:last-child) {
             margin-right: 5px;
         }
 
-        &--active {
+        &--active a {
             font-weight: 700;
             background-color: var(--violet-4);
+            color: var(--violet-1);
 
             pointer-events: none;
-
-            & a {
-                color: var(--violet-1);
-            }
         }
     }
 
@@ -175,10 +184,19 @@
 
         & .nav__text {
             color: var(--grey-3);
+            transition: all 0.2s ease;
         }
 
         & .nav__icon {
             fill: var(--violet-4);
+            transition: all 0.2s ease;
+        }
+
+        &:hover {
+            & .nav__text {
+                color: var(--grey-2);
+                transition: all 0.2s ease;
+            }
         }
     }
 

@@ -618,14 +618,14 @@
 
         <div class="pagination">
           <ul class="pagination__list">
-            <li class="pagination__item pagination__item--disabled">
-              <svg class="pagination__arrow-prev" width="9" height="14">
-                <path d="M9 12.3433L3.43725 7L9 1.645L7.28745 0L0 7L7.28745 14L9 12.3433Z" />
+            <li class="pagination__prev disabled">
+              <svg class="pagination__prev-arrow" width="9" height="14">
+                <use xlink:href="img/sprite.svg#pagination-prev"></use>
               </svg>
               Назад
             </li>
             <li class="pagination__item">1</li>
-            <li class="pagination__item">2</li>
+            <li class="pagination__item active">2</li>
             <li class="pagination__item">3</li>
             <li class="pagination__item">4</li>
             <li class="pagination__item">5</li>
@@ -634,10 +634,10 @@
             <li class="pagination__item">8</li>
             <li class="pagination__item">9</li>
             <li class="pagination__item">10</li>
-            <li class="pagination__item">
+            <li class="pagination__next">
               Вперёд
-              <svg class="pagination__arrow-next" width="9" height="14">
-                <path d="M0 12.3433L5.56275 7L0 1.645L1.71255 0L9 7L1.71255 14L0 12.3433Z" />
+              <svg class="pagination__next-arrow" width="9" height="14">
+                <use xlink:href="img/sprite.svg#pagination-next"></use>
               </svg>
             </li>
           </ul>

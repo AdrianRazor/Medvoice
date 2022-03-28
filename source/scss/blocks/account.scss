@@ -17,6 +17,7 @@
     &__icon {
         fill: var(--violet-2);
         margin-right: 10px;
+        transition: all 0.2s ease;
     }
     
     &__title {
@@ -24,6 +25,19 @@
         font-size: 16px;
         line-height: 100%;
         color: var(--grey-1);
+        transition: all 0.2s ease;
+    }
+
+    &__item:hover {
+        & .account__icon {
+            fill: var(--violet-1);
+            transition: all 0.2s ease;
+        }
+
+        & .account__title {
+            color: var(--violet-1);
+            transition: all 0.2s ease;
+        }
     }
 
     &__item--active {

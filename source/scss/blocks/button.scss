@@ -7,6 +7,7 @@
     padding: 0 40px;
     border-radius: 100px;
     background-color: var(--turquoise-1);
+    transition: all 0.2s ease;
     cursor: pointer;
     
     font-weight: 700;
@@ -14,11 +15,13 @@
     line-height: 100%;
     color: #fff;
 
+    &:hover {
+        background-color: var(--turquoise-2);
+        transition: all 0.2s ease;
+    }
+
     &--subscribe {
         padding: 0 25px;
-        background-color: var(--turquoise-4);
-        color: var(--turquoise-1);
-
         margin-right: 25px;
     }
 
@@ -27,24 +30,38 @@
         background-color: transparent;
         border: 1px solid var(--turquoise-1);
         color: var(--turquoise-1);
+        transition: all 0.2s ease;
+
+        &:hover {
+            border: 1px solid transparent;
+            background-color: var(--turquoise-4);
+            color: var(--turquoise-1);
+            transition: all 0.2s ease;
+        }
     }
 
     &--cancel {
         margin-right: 40px;
         padding: 0;
         min-height: unset;
-        background-color: transparent;
         color: var(--grey-3);
+        background-color: transparent;
+
+        &:hover {
+            color: var(--grey-2);
+            background-color: transparent;
+            transition: all 0.2s ease;
+        }
     }
 
     &--filter {
         min-height: 28px;
         padding: 0 15px;
-        background-color: var(--violet-2);
+        background-color: var(--violet-1);
         transition: all 0.2s ease;
 
         &:hover {
-            background-color: var(--violet-1);
+            background-color: var(--violet-2);
             transition: all 0.2s ease;
         }
     }
@@ -63,6 +80,12 @@
         background-color: transparent;
         color: var(--grey-3);
         margin-right: 25px;
+
+        &:hover {
+            color: var(--grey-2);
+            background-color: transparent;
+            transition: all 0.2s ease;
+        }
     }
 
     &--apply {
@@ -71,5 +94,11 @@
         border-radius: none;
         background-color: transparent;
         color: var(--violet-1);
+
+        &:hover {
+            color: var(--violet-2);
+            background-color: transparent;
+            transition: all 0.2s ease;
+        }
     }
 }

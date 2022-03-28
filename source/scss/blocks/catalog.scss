@@ -19,11 +19,11 @@
     &__x-icon {
         cursor: pointer;
         margin-left: 15px;
-        fill: var(--violet-2);
+        fill: var(--violet-1);
         transition: all 0.2s ease;
 
         &:hover {
-            fill: var(--violet-1);
+            fill: var(--violet-2);
             transition: all 0.2s ease;
         }
     }
@@ -37,7 +37,7 @@
 
         &-row {
             cursor: pointer;
-            fill: var(--grey-2);
+            fill: var(--grey-1);
             transition: all 0.2s ease;
             margin-right: 15px;
     
@@ -54,7 +54,7 @@
 
         &-grid {
             cursor: pointer;
-            fill: var(--grey-2);
+            fill: var(--grey-1);
             transition: all 0.2s ease;
             
             &:hover {
