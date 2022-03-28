@@ -55,4 +55,21 @@
         background-color: var(--violet-1);
         font-weight: 400;
     }
+
+    &--reset {
+        min-height: unset;
+        padding: 0;
+        border-radius: none;
+        background-color: transparent;
+        color: var(--grey-3);
+        margin-right: 25px;
+    }
+
+    &--apply {
+        min-height: unset;
+        padding: 0;
+        border-radius: none;
+        background-color: transparent;
+        color: var(--violet-1);
+    }
 }
