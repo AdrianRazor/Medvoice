@@ -99,17 +99,8 @@
     }
 
 
-
     &__tags {
-        display: flex;
-        align-items: center;
         margin-bottom: 40px;
-    }
-
-    &__tag {
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
     }
 
     &__description {

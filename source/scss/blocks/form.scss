@@ -84,16 +84,6 @@
             }
         }
     }
-
-    &__row {
-        &:not(:first-of-type) {
-            margin-top: 15px;
-        }
-
-        &.disabled {
-          pointer-events: none;
-        }
-    }
     
     &__avatar {
         position: relative;
@@ -126,7 +116,7 @@
         border-radius: 50%;
 
         position: absolute;
-        top: 72px;
+        top: -28px;
         left: 72px;
         z-index: 10;
 
@@ -175,8 +165,68 @@
         line-height: 100%;
         color: var(--grey-1);
 
-        &:read-only {
+        &:active,
+        &:focus {
+            border: 1px solid var(--turquoise-1);
+        }
+
+        &:invalid {
+            border: 1px solid #CF0707;
+        }
+
+        &[type=password] {
+            position: relative;
+            padding-right: 40px;
+        
+            &:invalid {
+                border: 1px solid #CF0707;
+                background-color: #FDF3F3;
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+        padding-left: 10px;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        background-color: transparent;
+
+        & svg {
+            fill: var(--grey-1);
+            transition: all 0.2s ease;
+        }
+        
+        &:hover svg {
+            fill: var(--violet-1);
+            transition: all 0.2s ease;
+        }
+    }
+
+    &__row {
+        position: relative;
+
+        &:not(:first-of-type) {
+            margin-top: 15px;
+        }
+
+        &.disabled {
+          pointer-events: none;
+
+          & .form__field {
             border: 1px solid transparent;
+          }
+
+          & .select__header {
+            border: 1px solid transparent;
+          }
         }
     }
 

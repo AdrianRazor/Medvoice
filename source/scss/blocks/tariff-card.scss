@@ -1,20 +1,26 @@
 .tariff-card {
+    min-height: 230px;
     padding: 20px;
     background-color: #fff;
-    border: 5px solid transparent;
-    transition: all 0.4s ease;
-    box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
     border-radius: 20px;
+    border: 1px solid var(--line);
+    transition: all 0.3s ease;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
-    &:hover,
+    &:hover {
+        border: 1px solid transparent;
+        box-shadow: 0 15px 30px rgb(0 0 0 / 7%);
+        transition: all 0.3s ease;
+    }
+
     &.active {
         background-color: var(--violet-4);
         border: 5px solid var(--violet-1);
-        transition: all 0.4s ease;
+        box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
+        transition: all 0.3s ease;
     }
 
     &__head {
@@ -90,5 +96,9 @@
         align-self: flex-end;
         padding-left: 25px;
         padding-right: 25px;
+
+        &:hover {
+            background-color: var(--violet-2);
+        }
     }
 }

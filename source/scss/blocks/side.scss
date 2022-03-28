@@ -1,10 +1,14 @@
 .side {
     width: 385px;
     height: 650px;
+
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
+
     background-color: #fff;
     padding: 40px 20px;
-    overflow-y: auto;
+    // overflow-y: hidden;
 
     &__title {
         font-weight: 700;
@@ -12,6 +16,28 @@
         line-height: 120%;
         color: var(--grey-1);
         margin-bottom: 25px;
+    }
+
+    &__block {
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+    
+            &-track {
+                background: var(--grey-4);
+                border-radius: 4px;
+            }
+            
+            &-thumb {
+                background: var(--grey-3);
+                border-radius: 4px;
+            }
+            
+            &-thumb:hover {
+                background: var(--grey-2);
+            }
+        }
     }
 
     &__item {
@@ -106,22 +132,4 @@
         line-height: 100%;
         color: var(--grey-2);
     }
-
-    &::-webkit-scrollbar {
-        width: 5px;
-
-        &-track {
-            background: var(--grey-4);
-        }
-        
-        &-thumb {
-            background: var(--grey-3);
-            border-radius: 5px;
-        }
-        
-        &-thumb:hover {
-            background: var(--grey-2);
-        }
-    }
-    
 }
