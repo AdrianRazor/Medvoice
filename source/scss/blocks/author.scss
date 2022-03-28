@@ -7,13 +7,39 @@
         }
     }
 
-    &__text {
+    &__content {
         max-width: 675px;
         padding-left: 95px;
 
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
-        color: var(--grey-1);
+        & h2,
+        & h3,
+        & h4,
+        & h5,
+        & h6 {
+            color: var(--grey-1);
+            margin: revert;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--grey-1);
+            margin: revert;
+        }
+
+        & ul,
+        & ol {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--grey-1);
+            margin: revert;
+            padding: revert;
+        }
+
+        & li {
+            list-style: revert;
+        }
     }
 }

@@ -259,6 +259,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       cards.forEach(item => {
         item.classList.add('card--row');
       });
+      iconGrid.classList.remove('active');
+      iconRow.classList.add('active');
     });
 
     iconGrid.addEventListener('click', function() {
@@ -266,6 +268,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       cards.forEach(item => {
         item.classList.remove('card--row');
       });
+      iconRow.classList.remove('active');
+      iconGrid.classList.add('active');
     });
   }
 
