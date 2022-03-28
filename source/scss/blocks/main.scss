@@ -1,0 +1,17 @@
+.main {
+    padding: 20px 20px 100px 20px;
+
+    &--lection {
+        padding: 0;
+        display: flex;
+    }
+
+    &--account {
+        padding: 40px 20px;
+    }
+
+    &--tariff,
+    &--user {
+        padding: 0;
+    }
+}

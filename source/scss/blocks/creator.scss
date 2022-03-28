@@ -80,6 +80,12 @@
         font-size: 14px;
         line-height: 100%;
         color: var(--violet-1);
+        transition: all 0.2s ease;
         margin-left: auto;
+
+        &:hover {
+            color: var(--violet-2);
+            transition: all 0.2s ease;
+        }
     }
 }

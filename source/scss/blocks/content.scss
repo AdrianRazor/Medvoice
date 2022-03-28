@@ -1,0 +1,7 @@
+.content {
+    width: calc(100% - 200px);
+
+    &--minimize {
+        width: calc(100% - 60px);
+    }
+}

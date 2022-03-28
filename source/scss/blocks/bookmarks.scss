@@ -5,6 +5,12 @@
   svg {
     stroke: var(--violet-1);
     fill: transparent;   
+    transition: all 0.2s ease;
+  }
+
+  &:hover svg {
+    stroke: var(--violet-2);
+    transition: all 0.2s ease;
   }
 
   &.saved {
