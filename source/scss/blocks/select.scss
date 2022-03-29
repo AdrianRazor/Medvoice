@@ -48,6 +48,17 @@
         right: 0;
         z-index: 20;
         margin-top: 10px;
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: var(--line);
+
+            position: absolute;
+            top: 0;
+            right: 14px;
+        }
     }
 
     &__block {
