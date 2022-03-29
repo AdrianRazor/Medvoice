@@ -35,7 +35,8 @@
             margin-left: auto;
         }
 
-        &-row {
+        &-row,
+        &-grid {
             cursor: pointer;
             fill: var(--grey-1);
             transition: all 0.2s ease;
@@ -49,22 +50,6 @@
             &.active {
                 fill: var(--violet-1);
                 pointer-events: none;
-                transition: all 0.2s ease;
-            }
-        }
-
-        &-grid {
-            cursor: pointer;
-            fill: var(--grey-1);
-            transition: all 0.2s ease;
-            
-            &:hover {
-                fill: var(--violet-1);
-                transition: all 0.2s ease;
-            }
-
-            &.active {
-                fill: var(--violet-1);
                 transition: all 0.2s ease;
             }
         }
