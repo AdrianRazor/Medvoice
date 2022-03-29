@@ -226,11 +226,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // Фильтр на странице "Каталог"
   let buttonFilter = document.querySelector('.button--filter');
+  let filterBlock = document.querySelector('.catalog__filter');
 
   if(buttonFilter) {
-    let filterBlock = document.querySelector('.catalog__filter');
-
     buttonFilter.addEventListener('click', function() {
+      buttonFilter.classList.toggle('active');
       filterBlock.classList.toggle('hidden');
     })
   }
