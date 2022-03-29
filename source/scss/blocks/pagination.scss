@@ -1,111 +1,80 @@
 .pagination {
     margin-top: 60px;
     
-    &__list {
+    &__list,
+    &__button {
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     &__item {
-        width: 24px;
-        height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 0 5px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+
+      color: var(--violet-1);
+
+      &--prev {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+      
+      &--next {
+        margin-right: 0;
+        margin-left: 20px;
+      }
+    }
+
+    &__button {  
+      min-width: 24px;
+      height: 24px;
+
+      font: inherit;
+  
+      color: inherit;
+
+      transition: all 0.2s ease;
+
+      svg {
+        fill: var(--violet-1);
+      }
+
+      &.current {
+        pointer-events: none;
+        background-color: var(--violet-4);
+      }
+
+      &:hover {
+        color: var(--violet-2);
+        transition: all 0.2s ease;
+
+        svg {
+          fill: var(--violet-2);
+        }
+      }
+
+      &--page {
         background-color: transparent;
         border-radius: 50%;
+      }
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-        color: var(--violet-1);
-        transition: all 0.2s ease;
-
-        &:hover {
-            color: var(--violet-2);
-            transition: all 0.2s ease;
+      &--prev {
+        svg {
+          margin-right: 10px;
         }
-    
-        &:not(:last-child) {
-            margin-right: 10px;
+      }
+
+      &--next {
+        svg {
+          margin-left: 10px;
         }
-
-        &.active {
-            pointer-events: none;
-            background-color: var(--violet-4);
-        }
-    }
-
-    &__prev {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 20px;
-
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-
-        color: var(--violet-1);
-        transition: all 0.2s ease;
-
-        &-arrow {
-            fill: var(--violet-3);
-            margin-right: 10px;
-        }
-
-        &:hover {
-            color: var(--violet-2);
-            transition: all 0.2s ease;
-
-            & .pagination__prev-arrow {
-                fill: var(--violet-2);
-                transition: all 0.2s ease;
-            }
-        }
-
-        &.disabled {
-            pointer-events: none;
-            color: var(--violet-3);
-        }
-    }
-
-    &__next {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 20px;
-
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-
-        color: var(--violet-1);
-        transition: all 0.2s ease;
-
-        &-arrow {
-            fill: var(--violet-1);
-            margin-left: 10px;
-        }
-
-        &:hover {
-            color: var(--violet-2);
-            transition: all 0.2s ease;
-
-            & .pagination__next-arrow {
-                fill: var(--violet-2);
-                transition: all 0.2s ease;
-            }
-        }
-
-        &.disabled {
-            pointer-events: none;
-            color: var(--violet-3);
-        }
+      }
     }
 }
