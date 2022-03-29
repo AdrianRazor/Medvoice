@@ -60,6 +60,11 @@
         background-color: var(--violet-1);
         transition: all 0.2s ease;
 
+        & svg {
+            fill: #fff;
+            margin-left: 10px;
+        }
+
         &:hover {
             background-color: var(--violet-2);
             transition: all 0.2s ease;

@@ -15,6 +15,11 @@
         background: linear-gradient(95.01deg, #A39CEF 0%, #D2D4FF 52.54%, #D0E0FF 100%);
     }
 
+    &--courses {
+        min-height: 240px;
+        background: linear-gradient(95.01deg, #FEF9D8 0%, #FFD4DA 51.54%, #B9C2F1 100%);
+    }
+
     &--author {
         min-height: 240px;
         background: linear-gradient(95.01deg, #89CDFE 0%, #AED8FF 49.42%, #D9F1FF 100%);

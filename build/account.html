@@ -32,7 +32,7 @@
             <span class="nav__flag">Главная</span>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link" href="courses.html">
+            <a class="nav__item-link" href="catalog-courses.html">
               <svg class="nav__icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#courses"></use>
               </svg>
@@ -280,7 +280,7 @@
               <div class="form__wrapper">
                 <div class="form__avatar">
                   <div class="form__avatar-box">
-                    <img class="form__avatar-img" src="img/avatar.jpg" alt="avatar">
+                    <img class="form__avatar-img" src="img/avatar-default-2.svg" alt="avatar">
                   </div>
                   <p class="form__row hidden">
                     <label class="form__upload" for="photo"></label>
@@ -320,16 +320,20 @@
                         </svg>
                       </div>
 
-                      <ul class="select__body">
-                        <li class="select__item" data-value="-1">Выберите специальность</li>
-                        <li class="select__item" data-value="0">Хирург</li>
-                        <li class="select__item" data-value="1">Детская стоматология</li>
-                        <li class="select__item" data-value="2">Взрослая стоматология</li>
-                        <li class="select__item" data-value="3">Нейрохирургия</li>
-                        <li class="select__item" data-value="4">Пластическая хирургия</li>
-                        <li class="select__item" data-value="5">Долгожители</li>
-                        <li class="select__item" data-value="6">Генетика детей</li>
-                      </ul>
+                      <div class="select__body">
+                        <div class="select__block">
+                          <ul class="select__list">
+                            <li class="select__item" data-value="-1">Выберите специальность</li>
+                            <li class="select__item" data-value="0">Хирург</li>
+                            <li class="select__item" data-value="1">Детская стоматология</li>
+                            <li class="select__item" data-value="2">Взрослая стоматология</li>
+                            <li class="select__item" data-value="3">Нейрохирургия</li>
+                            <li class="select__item" data-value="4">Пластическая хирургия</li>
+                            <li class="select__item" data-value="5">Долгожители</li>
+                            <li class="select__item" data-value="6">Генетика детей</li>
+                          </ul>
+                        </div>
+                      </div>
 
                       <select class="select__field" name="specialization" id="specialization">
                         <option value="-1"></option>
@@ -355,14 +359,21 @@
                         </svg>
                       </div>
 
-                      <ul class="select__body">
-                        <li class="select__item" data-value="-1">Укажите свою страну</li>
-                        <li class="select__item" data-value="0">Украина</li>
-                        <li class="select__item" data-value="1">Польша</li>
-                        <li class="select__item" data-value="2">Германия</li>
-                        <li class="select__item" data-value="3">Австрия</li>
-                        <li class="select__item" data-value="4">Чехия</li>
-                      </ul>
+                      <div class="select__body">
+                        <div class="select__block">
+                          <ul class="select__list">
+                            <li class="select__item" data-value="-1">Укажите свою страну</li>
+                            <li class="select__item" data-value="0">Украина</li>
+                            <li class="select__item" data-value="1">Польша</li>
+                            <li class="select__item" data-value="2">Германия</li>
+                            <li class="select__item" data-value="3">Австрия</li>
+                            <li class="select__item" data-value="4">Чехия</li>
+                            <li class="select__item" data-value="4">Венгрия</li>
+                            <li class="select__item" data-value="4">Франция</li>
+                            <li class="select__item" data-value="4">Бельгия</li>
+                          </ul>
+                        </div>
+                      </div>
 
                       <select class="select__field" name="country" id="country">
                         <option value="-1"></option>
