@@ -46,6 +46,16 @@
         fill: var(--violet-1);
       }
 
+      &.disabled {
+        color: var(--violet-3);
+
+        pointer-events: none;
+
+        svg {
+          fill: var(--violet-3);
+        }
+      }
+
       &.current {
         pointer-events: none;
         background-color: var(--violet-4);
