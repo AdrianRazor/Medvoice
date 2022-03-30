@@ -15,6 +15,7 @@
         font-size: 20px;
         line-height: 100%;
         color: var(--grey-1);
+        margin-bottom: 15px;
     }
 
     &__list {
@@ -42,11 +43,15 @@
         height: 100%;
     }
 
-    &__text {
+    &__text,
+    &__empty {
         font-weight: 400;
         font-size: 12px;
         line-height: 100%;
         color: var(--grey-2);
+    }
+    
+    &__text {
         margin-bottom: 5px;
     }
 
