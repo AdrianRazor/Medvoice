@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <title>Medvoice - Личный кабинет</title>
 </head>
@@ -320,9 +321,9 @@
                         </svg>
                       </div>
 
-                      <div class="select__body">
-                        <div class="select__block">
-                          <ul class="select__list">
+                      <div class="select__body swiper swiper-select">
+                        <div class="select__block swiper-wrapper">
+                          <ul class="select__list swiper-slide">
                             <li class="select__item" data-value="-1">Выберите специальность</li>
                             <li class="select__item" data-value="0">Хирург</li>
                             <li class="select__item" data-value="1">Детская стоматология</li>
@@ -332,6 +333,9 @@
                             <li class="select__item" data-value="5">Долгожители</li>
                             <li class="select__item" data-value="6">Генетика детей</li>
                           </ul>
+                        </div>
+                        <div class="select__scrollbar">
+                          <div class="select__drag"></div>
                         </div>
                       </div>
 
@@ -359,9 +363,9 @@
                         </svg>
                       </div>
 
-                      <div class="select__body">
-                        <div class="select__block">
-                          <ul class="select__list">
+                      <div class="select__body swiper swiper-select">
+                        <div class="select__block swiper-wrapper">
+                          <ul class="select__list swiper-slide">
                             <li class="select__item" data-value="-1">Укажите свою страну</li>
                             <li class="select__item" data-value="0">Украина</li>
                             <li class="select__item" data-value="1">Польша</li>
@@ -372,6 +376,9 @@
                             <li class="select__item" data-value="4">Франция</li>
                             <li class="select__item" data-value="4">Бельгия</li>
                           </ul>
+                        </div>
+                        <div class="select__scrollbar">
+                          <div class="select__drag"></div>
                         </div>
                       </div>
 
@@ -544,6 +551,7 @@
     </div>
   </div>
 
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

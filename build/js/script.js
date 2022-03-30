@@ -70,6 +70,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         prevEl: '.slider__btn-prev',
       },
     });
+
+    const swiperSelect = new Swiper('.swiper-select', {
+        direction: "vertical",
+        slidesPerView: "auto",
+        freemode: true,
+
+        scrollbar: {
+          el: ".select__scrollbar",
+          dragClass: "select__drag",
+        },
+        mousewheel: true,
+    });
   }
 
 
