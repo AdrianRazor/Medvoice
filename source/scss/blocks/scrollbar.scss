@@ -1,0 +1,29 @@
+.scrollbar {
+  width: 14px;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-left: 1px solid var(--line);
+    transition: all 0.2s ease;
+  }
+
+  &__drag {
+    width: 6px;
+    margin: 0 auto;
+    background: rgba(152, 153, 157, 0.55);
+    border-radius: 10px;
+  }
+
+  &--select {
+    height: 90%;
+    top: 5%;
+  }
+}

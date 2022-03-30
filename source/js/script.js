@@ -77,8 +77,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
         freemode: true,
 
         scrollbar: {
-          el: ".select__scrollbar",
-          dragClass: "select__drag",
+          el: ".scrollbar",
+          dragClass: "scrollbar__drag",
+        },
+        mousewheel: true,
+    });
+
+    const swiperSide = new Swiper('.swiper-side', {
+        direction: "vertical",
+        slidesPerView: "auto",
+        freemode: true,
+
+        scrollbar: {
+          el: ".scrollbar",
+          dragClass: "scrollbar__drag",
         },
         mousewheel: true,
     });

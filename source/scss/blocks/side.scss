@@ -18,25 +18,14 @@
         margin-bottom: 25px;
     }
 
-    &__block {
-        overflow-y: auto;
+    &__body {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
 
-        &::-webkit-scrollbar {
-            width: 6px;
-    
-            &-track {
-                background: #fff;
-            }
-            
-            &-thumb {
-                background: rgba(152, 153, 157, 0.55);
-                border-radius: 10px;
-            }
-            
-            &-thumb:hover {
-                background: var(--grey-3);
-            }
-        }
+    &__block {
+        height: 100%;
     }
 
     &__item {
