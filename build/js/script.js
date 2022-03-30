@@ -71,7 +71,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
       },
     });
 
-    const swiperSelect = new Swiper('.swiper-select', {
+    const selectSlides = document.querySelectorAll('.swiper-select');
+    if (selectSlides.length > 0) {
+      const swiperSelect = new Swiper('.swiper-select', {
         direction: "vertical",
         slidesPerView: "auto",
         freemode: true,
@@ -79,11 +81,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
         scrollbar: {
           el: ".scrollbar",
           dragClass: "scrollbar__drag",
+          draggable: true,
         },
         mousewheel: true,
-    });
+      });
 
-    const swiperSide = new Swiper('.swiper-side', {
+      swiperSelect.forEach(itemSelect => {
+        const pointerUpHandler = (evt) => {
+          evt.stopPropagation();
+        };
+
+        itemSelect.scrollbar.dragEl.addEventListener('pointerup', pointerUpHandler);
+      });
+    }
+
+    const side = document.querySelector('.swiper-side');
+    if (side) {
+      const swiperSide = new Swiper('.swiper-side', {
         direction: "vertical",
         slidesPerView: "auto",
         freemode: true,
@@ -91,9 +105,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         scrollbar: {
           el: ".scrollbar",
           dragClass: "scrollbar__drag",
+          draggable: true,
         },
         mousewheel: true,
-    });
+      });
+
+      swiperSide.scrollbar.dragEl.addEventListener('pointerup', (evt) => {
+        evt.stopPropagation();
+      });
+    }
   }
 
 
