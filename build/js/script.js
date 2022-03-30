@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           el: ".scrollbar",
           dragClass: "scrollbar__drag",
           draggable: true,
+          dragSize: 75,
           snapOnRelease: false
         },
         mousewheel: true,
