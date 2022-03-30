@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   if (buttonFilter) {
     buttonFilter.addEventListener('click', function () {
       buttonFilter.classList.toggle('active');
-      filterBlock.classList.toggle('hidden');
+      filterBlock.classList.toggle('active');
     })
   }
 
