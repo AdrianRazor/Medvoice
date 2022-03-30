@@ -77,21 +77,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         direction: "vertical",
         slidesPerView: "auto",
         freemode: true,
-
         scrollbar: {
           el: ".scrollbar",
           dragClass: "scrollbar__drag",
           draggable: true,
+          snapOnRelease: false
         },
         mousewheel: true,
-      });
-
-      swiperSelect.forEach(itemSelect => {
-        const pointerUpHandler = (evt) => {
-          evt.stopPropagation();
-        };
-
-        itemSelect.scrollbar.dragEl.addEventListener('pointerup', pointerUpHandler);
       });
     }
 
@@ -106,12 +98,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
           el: ".scrollbar",
           dragClass: "scrollbar__drag",
           draggable: true,
+          snapOnRelease: false
         },
         mousewheel: true,
-      });
-
-      swiperSide.scrollbar.dragEl.addEventListener('pointerup', (evt) => {
-        evt.stopPropagation();
       });
     }
   }
