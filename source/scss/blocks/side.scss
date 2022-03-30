@@ -9,7 +9,7 @@
     flex-shrink: 0;
 
     background-color: #fff;
-    padding: 40px 20px 60px 20px;
+    padding: 40px 20px;
     // overflow-y: hidden;
 
     &__title {
@@ -21,7 +21,9 @@
     }
 
     &__body {
-        height: 100%;
+      position: static;
+      
+        height: 480px;
         
         overflow: hidden;
     }
@@ -31,7 +33,7 @@
     }
 
     &__list {
-      
+      height: auto;
     }
 
     &__item {
