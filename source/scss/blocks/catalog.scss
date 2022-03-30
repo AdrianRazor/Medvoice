@@ -1,118 +1,150 @@
 .catalog {
-    &__head {
-        display: flex;
-        align-items: center;
-        margin-bottom: 25px;
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 100%;
+    color: var(--grey-1);
+    margin-right: 40px;
+  }
+
+  &__link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--grey-1);
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--grey-1);
+  }
+
+  &__x-icon {
+    cursor: pointer;
+    margin-left: 15px;
+    fill: var(--violet-1);
+    transition: all 0.2s ease;
+
+    &:hover {
+      fill: var(--violet-2);
+      transition: all 0.2s ease;
+    }
+  }
+
+  &__icon {
+    &-box {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
     }
 
-    &__amount {
-        display: flex;
-        align-items: center;
-        margin-left: 25px;
+    &-row,
+    &-grid {
+      cursor: pointer;
+      fill: var(--grey-1);
+      transition: all 0.2s ease;
+      margin-right: 15px;
 
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 100%;
-        color: var(--grey-1);
-    }
-
-    &__x-icon {
-        cursor: pointer;
-        margin-left: 15px;
+      &:hover {
         fill: var(--violet-1);
         transition: all 0.2s ease;
+      }
 
-        &:hover {
-            fill: var(--violet-2);
-            transition: all 0.2s ease;
-        }
+      &.active {
+        fill: var(--violet-1);
+        pointer-events: none;
+        transition: all 0.2s ease;
+      }
     }
+  }
 
-    &__icon {
-        &-box {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-        }
+  &__wrapper {
+    display: flex;
+  }
 
-        &-row,
-        &-grid {
-            cursor: pointer;
-            fill: var(--grey-1);
-            transition: all 0.2s ease;
-            margin-right: 15px;
-    
-            &:hover {
-                fill: var(--violet-1);
-                transition: all 0.2s ease;
-            }
+  &__filter {
+    width: 245px;
+    margin-right: 20px;
+  }
 
-            &.active {
-                fill: var(--violet-1);
-                pointer-events: none;
-                transition: all 0.2s ease;
-            }
-        }
-    } 
+  &__results {
+    width: 100%;
+  }
 
-    &__wrapper {
-        display: flex;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+
+    &--row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
+  }
 
-    &__filter {
-        width: 245px;
-        margin-right: 20px;
+
+  &--search {
+    & .catalog__head {
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 60px;
     }
-
-    &__results {
-        width: 100%;
-    }
-
-    &__cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px 20px;
-
-        &--row {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-    }
+  }
 }
 
 @media (min-width: 1200px) {
-    .catalog {
-        &__filter.hidden + .catalog__results .catalog__cards {
-            grid-template-columns: repeat(4, 1fr);
-        }
+  .catalog {
+
+    &__filter.hidden+.catalog__results .catalog__cards,
+    &--search .catalog__cards {
+      grid-template-columns: repeat(4, 1fr);
     }
+  }
 }
 
+
 @media (min-width: 1400px) {
-    .catalog {
-        &__cards {
-            grid-template-columns: repeat(4, 1fr);
-        }
+  .catalog {
+    &__cards {
+      grid-template-columns: repeat(4, 1fr);
     }
+
+    &--search .catalog__cards {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
 }
 
 @media (min-width: 1500px) {
-    .catalog {
-        &__filter.hidden + .catalog__results .catalog__cards {
-            grid-template-columns: repeat(5, 1fr);
-        }
+  .catalog {
+    &__filter.hidden+.catalog__results .catalog__cards {
+      grid-template-columns: repeat(5, 1fr);
     }
+  }
 }
 
 @media (min-width: 1700px) {
-    .catalog {
-        &__cards {
-            grid-template-columns: repeat(5, 1fr);
-        }
-
-        &__filter.hidden + .catalog__results .catalog__cards {
-            grid-template-columns: repeat(6, 1fr);
-        }
+  .catalog {
+    &__cards {
+      grid-template-columns: repeat(5, 1fr);
     }
+
+    &__filter.hidden+.catalog__results .catalog__cards,
+    &--search .catalog__cards {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
 }
