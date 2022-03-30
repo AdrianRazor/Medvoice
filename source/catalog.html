@@ -188,7 +188,7 @@
               </li>
             </ul>
 
-            <a href="search.html" class="button">
+            <a href="search.html" class="results__button button">
               Смотреть больше
             </a>
           </div>
@@ -504,15 +504,15 @@
                     </ul>
                   </div>
                 </div>
-                
+
                 <div class="form__button-box form__button-box--filter">
-                          <button class="button button--reset">
-                            Сбросить
-                          </button>
-                          <button class="button button--apply">
-                            Применить
-                          </button>
-                      </div>
+                  <button class="button button--reset">
+                    Сбросить
+                  </button>
+                  <button class="button button--apply">
+                    Применить
+                  </button>
+                </div>
               </form>
             </div>
 
@@ -792,27 +792,46 @@
 
               <div class="pagination">
                 <ul class="pagination__list">
-                  <li class="pagination__prev disabled">
-                    <svg class="pagination__prev-arrow" width="9" height="14">
-                      <use xlink:href="img/sprite.svg#pagination-prev"></use>
-                    </svg>
-                    Назад
+                  <li class="pagination__item pagination__item--prev">
+                    <a href="#catalog" class="pagination__button pagination__button--prev disabled" data-paged="0">
+                      <svg width="9" height="14">
+                        <use xlink:href="img/sprite.svg#pagination-prev"></use>
+                      </svg>
+
+                      Назад </a>
                   </li>
-                  <li class="pagination__item">1</li>
-                  <li class="pagination__item active">2</li>
-                  <li class="pagination__item">3</li>
-                  <li class="pagination__item">4</li>
-                  <li class="pagination__item">5</li>
-                  <li class="pagination__item">6</li>
-                  <li class="pagination__item">7</li>
-                  <li class="pagination__item">8</li>
-                  <li class="pagination__item">9</li>
-                  <li class="pagination__item">10</li>
-                  <li class="pagination__next">
-                    Вперёд
-                    <svg class="pagination__next-arrow" width="9" height="14">
-                      <use xlink:href="img/sprite.svg#pagination-next"></use>
-                    </svg>
+
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page first current" data-paged="1">
+                      1 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page  " data-paged="2">
+                      2 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page  " data-paged="3">
+                      3 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page  " data-paged="4">
+                      4 </a>
+                  </li>
+                  <li class="pagination__item pagination__item--separate">
+                    ...
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page last" data-paged="7">
+                      7 </a>
+                  </li>
+
+                  <li class="pagination__item pagination__item--next">
+                    <a href="#catalog" class="pagination__button pagination__button--next " data-paged="2">
+                      Вперёд
+                      <svg width="9" height="14">
+                        <use xlink:href="img/sprite.svg#pagination-next"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>

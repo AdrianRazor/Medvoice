@@ -1,828 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <title>Medvoice - Курсы</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <title>Medvoice - Курсы</title>
 </head>
 
 <body>
-    <div class="container">
-        <aside class="nav">
-            <a href="index.html" class="logo logo--nav">
-              <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
-              <img class="logo__img--short hidden" src="img/medvoice-logo-short.png" alt="Medvoice Logo">
-            </a>
-            <button class="nav__btn">
-              <svg class="nav__btn-arrow" width="6" height="10">
-                <use xlink:href="img/sprite.svg#nav-arrow"></use>
+  <div class="container">
+    <aside class="nav">
+      <a href="index.html" class="logo logo--nav">
+        <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
+        <img class="logo__img--short hidden" src="img/medvoice-logo-short.png" alt="Medvoice Logo">
+      </a>
+      <button class="nav__btn">
+        <svg class="nav__btn-arrow" width="6" height="10">
+          <use xlink:href="img/sprite.svg#nav-arrow"></use>
+        </svg>
+      </button>
+      <nav class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__item-link" href="index.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#main"></use>
               </svg>
-            </button>
-            <nav class="nav__wrapper">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__item-link" href="index.html">
-                    <svg class="nav__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#main"></use>
-                    </svg>
-                    <p class="nav__text">Главная</p>
-                  </a>
-                  <span class="nav__flag">Главная</span>
-                </li>
-                <li class="nav__item nav__item--active">
-                  <a class="nav__item-link" href="catalog-courses.html">
-                    <svg class="nav__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#courses"></use>
-                    </svg>
-                    <p class="nav__text">Курсы</p>
-                  </a>
-                  <span class="nav__flag">Курсы</span>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__item-link" href="webinars.html">
-                    <svg class="nav__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#webinars"></use>
-                    </svg>
-                    <p class="nav__text">Вебинары</p>
-                  </a>
-                  <span class="nav__flag">Вебинары</span>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__item-link" href="catalog.html">
-                    <svg class="nav__icon" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#catalog"></use>
-                    </svg>
-                    <p class="nav__text">Каталог</p>
-                  </a>
-                  <span class="nav__flag">Каталог</span>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__item-link" href="bookmarks.html">
-                    <svg class="nav__icon" width="20" height="20">
+              <p class="nav__text">Главная</p>
+            </a>
+            <span class="nav__flag">Главная</span>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a class="nav__item-link" href="catalog-courses.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#courses"></use>
+              </svg>
+              <p class="nav__text">Курсы</p>
+            </a>
+            <span class="nav__flag">Курсы</span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="webinars.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#webinars"></use>
+              </svg>
+              <p class="nav__text">Вебинары</p>
+            </a>
+            <span class="nav__flag">Вебинары</span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="catalog.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#catalog"></use>
+              </svg>
+              <p class="nav__text">Каталог</p>
+            </a>
+            <span class="nav__flag">Каталог</span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="bookmarks.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#bookmarks"></use>
+              </svg>
+              <p class="nav__text">Закладки</p>
+            </a>
+            <span class="nav__flag">Закладки</span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="account.html">
+              <svg class="nav__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#profile"></use>
+              </svg>
+              <p class="nav__text">Профиль</p>
+            </a>
+            <span class="nav__flag">Профиль</span>
+          </li>
+        </ul>
+        <ul class="nav__lang-list">
+          <li class="nav__lang-link">
+            <a href="#">EN</a>
+          </li>
+          <li class="nav__lang-link">
+            <a href="#">UA</a>
+          </li>
+          <li class="nav__lang-link nav__lang-link--active">
+            <a href="#">RU</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social__wrapper">
+        <a class="social__policy" href="#">Политика использования платформы</a>
+        <ul class="social__list">
+          <li class="social__link">
+            <a class="social__icon-box" href="#">
+              <svg class="social__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__link">
+            <a class="social__icon-box" href="#">
+              <svg class="social__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__link">
+            <a class="social__icon-box" href="#">
+              <svg class="social__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__link">
+            <a class="social__icon-box" href="#">
+              <svg class="social__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="social__mail-link" href="mailto:support@medvoice.net">support@medvoice.net</a>
+        <a class="social__phone-link" href="tel:+380963718716">+38 (096) 37 18 716</a>
+      </div>
+    </aside>
+
+    <div class="content">
+      <header class="header">
+        <div class="header__search">
+          <form class="header__form">
+            <input type="search" class="header__field" placeholder="Поиск...">
+          </form>
+          <div class="results hidden">
+            <h3 class="results__title">
+              Результаты
+            </h3>
+
+            <ul class="results__list">
+              <li class="results__item">
+                <a href="#" class="results__link">
+                  <div class="results__img-box">
+                    <img class="results__img" src="img/card-1.jpg" alt="">
+                  </div>
+                  <div class="results__text-box">
+                    <p class="results__text">
+                      Курс
+                    </p>
+                    <h4 class="results__name">
+                      Международный симпозиум по хирургии
+                    </h4>
+                  </div>
+                </a>
+              </li>
+
+              <li class="results__item">
+                <a href="#" class="results__link">
+                  <div class="results__img-box">
+                    <img class="results__img" src="img/card-3.jpg" alt="">
+                  </div>
+                  <div class="results__text-box">
+                    <p class="results__text">
+                      Вебинар
+                    </p>
+                    <h4 class="results__name">
+                      Международный симпозиум по хирургии
+                    </h4>
+                  </div>
+                </a>
+              </li>
+
+              <li class="results__item">
+                <a href="#" class="results__link">
+                  <div class="results__img-box">
+                    <img class="results__img" src="img/card-5.jpg" alt="">
+                  </div>
+                  <div class="results__text-box">
+                    <p class="results__text">
+                      Лекция
+                    </p>
+                    <h4 class="results__name">
+                      Всё о хирургии
+                    </h4>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <a href="search.html" class="results__button button">
+              Смотреть больше
+            </a>
+          </div>
+        </div>
+
+        <div class="header__guest-mode hidden">
+          <a href="#" class="button button--subscribe">Оформить подписку</a>
+          <a href="#" class="button button--login">Log in</a>
+        </div>
+
+        <div class="header__user">
+          <p class="header__trial-text hidden">
+            Осталось <span class="header__trial-count">7 дней</span> триала
+          </p>
+          <div class="profile">
+            <div class="profile__avatar">
+              <img class="profile__avatar-img" src="img/avatar.jpg" alt="avatar">
+            </div>
+            <p class="profile__username">
+              Kseniia Vesta
+            </p>
+
+            <div class="profile__menu hidden">
+              <ul class="profile__list">
+                <li class="profile__item">
+                  <a class="profile__item-link" href="#">
+                    <svg class="profile__icon" width="20" height="20">
                       <use xlink:href="img/sprite.svg#bookmarks"></use>
                     </svg>
-                    <p class="nav__text">Закладки</p>
+                    <p class="profile__text">Закладки</p>
                   </a>
-                  <span class="nav__flag">Закладки</span>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__item-link" href="account.html">
-                    <svg class="nav__icon" width="20" height="20">
+                <li class="profile__item">
+                  <a class="profile__item-link" href="#">
+                    <svg class="profile__icon" width="20" height="20">
                       <use xlink:href="img/sprite.svg#profile"></use>
                     </svg>
-                    <p class="nav__text">Профиль</p>
-                  </a>
-                  <span class="nav__flag">Профиль</span>
-                </li>
-              </ul>
-              <ul class="nav__lang-list">
-                  <li class="nav__lang-link">
-                      <a href="#">EN</a>
-                  </li>
-                  <li class="nav__lang-link">
-                      <a href="#">UA</a>
-                  </li>
-                  <li class="nav__lang-link nav__lang-link--active">
-                      <a href="#">RU</a>
-                  </li>
-              </ul>
-            </nav>
-      
-            <div class="social__wrapper">
-              <a class="social__policy" href="#">Политика использования платформы</a>
-              <ul class="social__list">
-                <li class="social__link">
-                  <a class="social__icon-box" href="#">
-                    <svg class="social__icon" width="24" height="24">
-                      <use xlink:href="img/sprite.svg#facebook"></use>
-                    </svg>
+                    <p class="profile__text">Профиль</p>
                   </a>
                 </li>
-                <li class="social__link">
-                  <a class="social__icon-box" href="#">
-                    <svg class="social__icon" width="24" height="24">
-                      <use xlink:href="img/sprite.svg#youtube"></use>
+                <li class="profile__item">
+                  <a class="profile__item-link" href="#">
+                    <svg class="profile__icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#exit"></use>
                     </svg>
-                  </a>
-                </li>
-                <li class="social__link">
-                  <a class="social__icon-box" href="#">
-                    <svg class="social__icon" width="24" height="24">
-                      <use xlink:href="img/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__link">
-                  <a class="social__icon-box" href="#">
-                    <svg class="social__icon" width="24" height="24">
-                      <use xlink:href="img/sprite.svg#telegram"></use>
-                    </svg>
+                    <p class="profile__text">Выйти</p>
                   </a>
                 </li>
               </ul>
-              <a class="social__mail-link" href="mailto:support@medvoice.net">support@medvoice.net</a>
-              <a class="social__phone-link" href="tel:+380963718716">+38 (096) 37 18 716</a>
             </div>
-        </aside>
-        
-        <div class="content">
-            <header class="header">
-                <div class="header__search">
-                    <form class="header__form">
-                        <input type="search" class="header__field" placeholder="Поиск...">
-                    </form>
-                    <div class="results hidden">
-                        <h3 class="results__title">
-                            Результаты
-                        </h3>
-    
-                        <ul class="results__list">
-                            <li class="results__item">
-                                <a href="#" class="results__link">
-                                    <div class="results__img-box">
-                                        <img class="results__img" src="img/card-1.jpg" alt="">
-                                    </div>
-                                    <div class="results__text-box">
-                                        <p class="results__text">
-                                            Курс
-                                        </p>
-                                        <h4 class="results__name">
-                                            Международный симпозиум по хирургии
-                                        </h4>
-                                    </div>
-                                </a>
-                            </li>
-    
-                            <li class="results__item">
-                                <a href="#" class="results__link">
-                                    <div class="results__img-box">
-                                        <img class="results__img" src="img/card-3.jpg" alt="">
-                                    </div>
-                                    <div class="results__text-box">
-                                        <p class="results__text">
-                                            Вебинар
-                                        </p>
-                                        <h4 class="results__name">
-                                            Международный симпозиум по хирургии
-                                        </h4>
-                                    </div>
-                                </a>
-                            </li>
-    
-                            <li class="results__item">
-                                <a href="#" class="results__link">
-                                    <div class="results__img-box">
-                                        <img class="results__img" src="img/card-5.jpg" alt="">
-                                    </div>
-                                    <div class="results__text-box">
-                                        <p class="results__text">
-                                            Лекция
-                                        </p>
-                                        <h4 class="results__name">
-                                            Всё о хирургии
-                                        </h4>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-    
-                        <a href="search.html" class="button">
-                            Смотреть больше
-                        </a>
-                    </div>
-                </div>
-
-                <div class="header__guest-mode hidden">
-                    <a href="#" class="button button--subscribe">Оформить подписку</a>
-                    <a href="#" class="button button--login">Log in</a>
-                </div>
-
-                <div class="header__user">
-                    <p class="header__trial-text hidden">
-                            Осталось <span class="header__trial-count">7 дней</span> триала
-                    </p>
-                    <div class="profile">
-                        <div class="profile__avatar">
-                            <img class="profile__avatar-img" src="img/avatar.jpg" alt="avatar">
-                        </div>
-                        <p class="profile__username">
-                            Kseniia Vesta
-                        </p>
-                        
-                        <div class="profile__menu hidden">
-                            <ul class="profile__list">
-                                <li class="profile__item">
-                                    <a class="profile__item-link" href="#">
-                                        <svg class="profile__icon" width="20" height="20">
-                                            <use xlink:href="img/sprite.svg#bookmarks"></use>
-                                        </svg>
-                                        <p class="profile__text">Закладки</p>
-                                    </a>
-                                </li>
-                                <li class="profile__item">
-                                    <a class="profile__item-link" href="#">
-                                        <svg class="profile__icon" width="20" height="20">
-                                            <use xlink:href="img/sprite.svg#profile"></use>
-                                        </svg>
-                                        <p class="profile__text">Профиль</p>
-                                    </a>
-                                </li>
-                                <li class="profile__item">
-                                    <a class="profile__item-link" href="#">
-                                        <svg class="profile__icon" width="20" height="20">
-                                            <use xlink:href="img/sprite.svg#exit"></use>
-                                        </svg>
-                                        <p class="profile__text">Выйти</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <main class="main">
-              <section class="banner banner--courses" id="banner">
-                <h1 class="banner__title">
-                  Курсы
-                </h1>
-                <p class="banner__description">
-                  Здесь собраны все курсы платформы Medvoice. Воспользуйтесь фильтрами для быстрого поиска контента
-                </p>
-              </section>
-
-              <section class="catalog">
-                <div class="catalog__head">
-                  <button class="button button--filter">
-                    Фильтры
-                    <svg width="7" height="12">
-                      <use xlink:href="img/sprite.svg#filter-arrow"></use>
-                    </svg>
-                  </button>
-      
-                  <div class="catalog__amount hidden">
-                    10 результатов
-                    <svg class="catalog__x-icon" width="14" height="14">
-                      <use xlink:href="img/sprite.svg#x-icon"></use>
-                    </svg>
-                  </div>
-      
-                  <div class="catalog__icon-box">
-                    <svg class="catalog__icon-row" width="25" height="20">
-                      <use xlink:href="img/sprite.svg#row"></use>
-                    </svg>
-      
-                    <svg class="catalog__icon-grid active" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#grid"></use>
-                    </svg>
-                  </div>
-                </div>
-      
-                <div class="catalog__wrapper">
-                  <div class="catalog__filter hidden">
-                    <form class="form form--filter" action="">
-                      <div class="form__row">
-                        <input type="search" class="dropdown__field" placeholder="Поиск...">
-                      </div>
-      
-                      <div class="form__row">
-                        <div class="dropdown">
-                          <div class="dropdown__header">
-                            <span class="dropdown__name">Категория</span>
-                            <svg class="dropdown__icon" width="12" height="8">
-                              <use xlink:href="img/sprite.svg#select-arrow"></use>
-                            </svg>
-                          </div>
-      
-                          <ul class="dropdown__body">
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-01" name="value-01">
-                              <label class="dropdown__label" for="value-01">Хирургия</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-02" name="value-02">
-                              <label class="dropdown__label" for="value-02">Неврология</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-03" name="value-03">
-                              <label class="dropdown__label" for="value-03">Дерматология</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-04" name="value-04">
-                              <label class="dropdown__label" for="value-04">Стоматология</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-      
-                      <div class="form__row">
-                        <div class="dropdown">
-                          <div class="dropdown__header">
-                            <span class="dropdown__name">Подкатегория</span>
-                            <svg class="dropdown__icon" width="12" height="8">
-                              <use xlink:href="img/sprite.svg#select-arrow"></use>
-                            </svg>
-                          </div>
-      
-                          <ul class="dropdown__body">
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-05" name="value-05">
-                              <label class="dropdown__label" for="value-05">Детская стоматология</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-06" name="value-06">
-                              <label class="dropdown__label" for="value-06">Взрослая стоматология</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-07" name="value-07">
-                              <label class="dropdown__label" for="value-07">Нейрохирургия</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-08" name="value-08">
-                              <label class="dropdown__label" for="value-08">Пластическая хирургия</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-09" name="value-09">
-                              <label class="dropdown__label" for="value-09">Долгожители</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-10" name="value-10">
-                              <label class="dropdown__label" for="value-10">Генетика детей</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-      
-                      <div class="form__row">
-                        <div class="dropdown">
-                          <div class="dropdown__header">
-                            <span class="dropdown__name">Лекции</span>
-                            <svg class="dropdown__icon" width="12" height="8">
-                              <use xlink:href="img/sprite.svg#select-arrow"></use>
-                            </svg>
-                          </div>
-      
-                          <ul class="dropdown__body">
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-11" name="value-11">
-                              <label class="dropdown__label" for="value-11">Лекция 1</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-12" name="value-12">
-                              <label class="dropdown__label" for="value-12">Лекция 2</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-13" name="value-13">
-                              <label class="dropdown__label" for="value-13">Лекция 3</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-14" name="value-14">
-                              <label class="dropdown__label" for="value-14">Лекция 4</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-15" name="value-15">
-                              <label class="dropdown__label" for="value-15">Лекция 5</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-      
-                      <div class="form__row">
-                        <div class="dropdown">
-                          <div class="dropdown__header">
-                            <span class="dropdown__name">Автор</span>
-                            <svg class="dropdown__icon" width="12" height="8">
-                              <use xlink:href="img/sprite.svg#select-arrow"></use>
-                            </svg>
-                          </div>
-      
-                          <ul class="dropdown__body">
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-16" name="value-16">
-                              <label class="dropdown__label" for="value-16">Иван Иванов</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-17" name="value-17">
-                              <label class="dropdown__label" for="value-17">Джон Доу</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-18" name="value-18">
-                              <label class="dropdown__label" for="value-18">Доктор Комаровский</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-19" name="value-19">
-                              <label class="dropdown__label" for="value-19">Ульяна Супрун</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-20" name="value-20">
-                              <label class="dropdown__label" for="value-20">Альберт Швейцер</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-      
-                      <div class="form__row">
-                        <div class="dropdown">
-                          <div class="dropdown__header">
-                            <span class="dropdown__name">Теги проблематики</span>
-                            <svg class="dropdown__icon" width="12" height="8">
-                              <use xlink:href="img/sprite.svg#select-arrow"></use>
-                            </svg>
-                          </div>
-      
-                          <ul class="dropdown__body">
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-21" name="value-21">
-                              <label class="dropdown__label" for="value-21">Вирус</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-22" name="value-22">
-                              <label class="dropdown__label" for="value-22">Инфекция</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-23" name="value-23">
-                              <label class="dropdown__label" for="value-23">Перелом</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-24" name="value-24">
-                              <label class="dropdown__label" for="value-24">ОРВИ</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-25" name="value-25">
-                              <label class="dropdown__label" for="value-25">Пандемия</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-      
-                      <div class="form__row">
-                        <div class="dropdown">
-                          <div class="dropdown__header">
-                            <span class="dropdown__name">Языки</span>
-                            <svg class="dropdown__icon" width="12" height="8">
-                              <use xlink:href="img/sprite.svg#select-arrow"></use>
-                            </svg>
-                          </div>
-      
-                          <ul class="dropdown__body">
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-31" name="value-31">
-                              <label class="dropdown__label" for="value-31">Украинский</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-32" name="value-32">
-                              <label class="dropdown__label" for="value-32">English</label>
-                            </li>
-      
-                            <li class="dropdown__item">
-                              <input class="dropdown__check" class="" type="checkbox" id="value-33" name="value-33">
-                              <label class="dropdown__label" for="value-33">Deutch</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      
-                      <div class="form__button-box form__button-box--filter">
-                                <button class="button button--reset">
-                                  Сбросить
-                                </button>
-                                <button class="button button--apply">
-                                  Применить
-                                </button>
-                            </div>
-                    </form>
-                  </div>
-      
-                  <div class="catalog__results">
-                    <div class="catalog__cards">
-                      <a href="#" class="card card--search">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-1.jpg" alt="hospital">
-                          <div class="card__btn">
-                            <svg width="17" height="20">
-                              <use xlink:href="img/sprite.svg#play"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search card--block">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-2.jpg" alt="hospital">
-                          <div class="card__btn card__btn--lock">
-                            <svg width="22" height="27">
-                              <use xlink:href="img/sprite.svg#block"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks bookmarks--block">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-1.jpg" alt="hospital">
-                          <div class="card__btn">
-                            <svg width="17" height="20">
-                              <use xlink:href="img/sprite.svg#play"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search card--block">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-2.jpg" alt="hospital">
-                          <div class="card__btn card__btn--lock">
-                            <svg width="22" height="27">
-                              <use xlink:href="img/sprite.svg#block"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks bookmarks--block">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-1.jpg" alt="hospital">
-                          <div class="card__btn">
-                            <svg width="17" height="20">
-                              <use xlink:href="img/sprite.svg#play"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search card--block">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-2.jpg" alt="hospital">
-                          <div class="card__btn card__btn--lock">
-                            <svg width="22" height="27">
-                              <use xlink:href="img/sprite.svg#block"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks bookmarks--block">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-1.jpg" alt="hospital">
-                          <div class="card__btn">
-                            <svg width="17" height="20">
-                              <use xlink:href="img/sprite.svg#play"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search card--block">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-2.jpg" alt="hospital">
-                          <div class="card__btn card__btn--lock">
-                            <svg width="22" height="27">
-                              <use xlink:href="img/sprite.svg#block"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks bookmarks--block">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="#" class="card card--search card--block">
-                        <div class="card__link-box">
-                          <img class="card__img" src="img/card-2.jpg" alt="hospital">
-                          <div class="card__btn card__btn--lock">
-                            <svg width="22" height="27">
-                              <use xlink:href="img/sprite.svg#block"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="card__info">
-                          <h3 class="card__title">
-                            Международный симпозиум по тромбозу и гемостазу
-                          </h3>
-                          <div class="card__description">
-                            <div class="card__description-box">
-                              <p class="card__description-name">
-                                Курс
-                              </p>
-                              <p class="card__description-text">
-                                15 лекций
-                              </p>
-                            </div>
-                            <button class="bookmarks bookmarks--block">
-                              <svg width="16" height="20">
-                                <use xlink:href="img/sprite.svg#bookmark-2"></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-      
-                    <div class="pagination">
-                      <ul class="pagination__list">
-                        <li class="pagination__prev disabled">
-                          <svg class="pagination__prev-arrow" width="9" height="14">
-                            <use xlink:href="img/sprite.svg#pagination-prev"></use>
-                          </svg>
-                          Назад
-                        </li>
-                        <li class="pagination__item">1</li>
-                        <li class="pagination__item active">2</li>
-                        <li class="pagination__item">3</li>
-                        <li class="pagination__item">4</li>
-                        <li class="pagination__item">5</li>
-                        <li class="pagination__item">6</li>
-                        <li class="pagination__item">7</li>
-                        <li class="pagination__item">8</li>
-                        <li class="pagination__item">9</li>
-                        <li class="pagination__item">10</li>
-                        <li class="pagination__next">
-                          Вперёд
-                          <svg class="pagination__next-arrow" width="9" height="14">
-                            <use xlink:href="img/sprite.svg#pagination-next"></use>
-                          </svg>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </main>
+          </div>
         </div>
-    </div>
+      </header>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+      <main class="main">
+        <section class="banner banner--courses" id="banner">
+          <h1 class="banner__title">
+            Курсы
+          </h1>
+          <p class="banner__description">
+            Здесь собраны все курсы платформы Medvoice. Воспользуйтесь фильтрами для быстрого поиска контента
+          </p>
+        </section>
+
+        <section class="catalog">
+          <div class="catalog__head">
+            <button class="button button--filter">
+              Фильтры
+              <svg width="7" height="12">
+                <use xlink:href="img/sprite.svg#filter-arrow"></use>
+              </svg>
+            </button>
+
+            <div class="catalog__amount hidden">
+              10 результатов
+              <svg class="catalog__x-icon" width="14" height="14">
+                <use xlink:href="img/sprite.svg#x-icon"></use>
+              </svg>
+            </div>
+
+            <div class="catalog__icon-box">
+              <svg class="catalog__icon-row" width="25" height="20">
+                <use xlink:href="img/sprite.svg#row"></use>
+              </svg>
+
+              <svg class="catalog__icon-grid active" width="20" height="20">
+                <use xlink:href="img/sprite.svg#grid"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="catalog__wrapper">
+            <div class="catalog__filter hidden">
+              <form class="form form--filter" action="">
+                <div class="form__row">
+                  <input type="search" class="dropdown__field" placeholder="Поиск...">
+                </div>
+
+                <div class="form__row">
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <span class="dropdown__name">Категория</span>
+                      <svg class="dropdown__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown__body">
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-01" name="value-01">
+                        <label class="dropdown__label" for="value-01">Хирургия</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-02" name="value-02">
+                        <label class="dropdown__label" for="value-02">Неврология</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-03" name="value-03">
+                        <label class="dropdown__label" for="value-03">Дерматология</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-04" name="value-04">
+                        <label class="dropdown__label" for="value-04">Стоматология</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <span class="dropdown__name">Подкатегория</span>
+                      <svg class="dropdown__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown__body">
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-05" name="value-05">
+                        <label class="dropdown__label" for="value-05">Детская стоматология</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-06" name="value-06">
+                        <label class="dropdown__label" for="value-06">Взрослая стоматология</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-07" name="value-07">
+                        <label class="dropdown__label" for="value-07">Нейрохирургия</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-08" name="value-08">
+                        <label class="dropdown__label" for="value-08">Пластическая хирургия</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-09" name="value-09">
+                        <label class="dropdown__label" for="value-09">Долгожители</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-10" name="value-10">
+                        <label class="dropdown__label" for="value-10">Генетика детей</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <span class="dropdown__name">Лекции</span>
+                      <svg class="dropdown__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown__body">
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-11" name="value-11">
+                        <label class="dropdown__label" for="value-11">Лекция 1</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-12" name="value-12">
+                        <label class="dropdown__label" for="value-12">Лекция 2</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-13" name="value-13">
+                        <label class="dropdown__label" for="value-13">Лекция 3</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-14" name="value-14">
+                        <label class="dropdown__label" for="value-14">Лекция 4</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-15" name="value-15">
+                        <label class="dropdown__label" for="value-15">Лекция 5</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <span class="dropdown__name">Автор</span>
+                      <svg class="dropdown__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown__body">
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-16" name="value-16">
+                        <label class="dropdown__label" for="value-16">Иван Иванов</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-17" name="value-17">
+                        <label class="dropdown__label" for="value-17">Джон Доу</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-18" name="value-18">
+                        <label class="dropdown__label" for="value-18">Доктор Комаровский</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-19" name="value-19">
+                        <label class="dropdown__label" for="value-19">Ульяна Супрун</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-20" name="value-20">
+                        <label class="dropdown__label" for="value-20">Альберт Швейцер</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <span class="dropdown__name">Теги проблематики</span>
+                      <svg class="dropdown__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown__body">
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-21" name="value-21">
+                        <label class="dropdown__label" for="value-21">Вирус</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-22" name="value-22">
+                        <label class="dropdown__label" for="value-22">Инфекция</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-23" name="value-23">
+                        <label class="dropdown__label" for="value-23">Перелом</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-24" name="value-24">
+                        <label class="dropdown__label" for="value-24">ОРВИ</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-25" name="value-25">
+                        <label class="dropdown__label" for="value-25">Пандемия</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <span class="dropdown__name">Языки</span>
+                      <svg class="dropdown__icon" width="12" height="8">
+                        <use xlink:href="img/sprite.svg#select-arrow"></use>
+                      </svg>
+                    </div>
+
+                    <ul class="dropdown__body">
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-31" name="value-31">
+                        <label class="dropdown__label" for="value-31">Украинский</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-32" name="value-32">
+                        <label class="dropdown__label" for="value-32">English</label>
+                      </li>
+
+                      <li class="dropdown__item">
+                        <input class="dropdown__check" class="" type="checkbox" id="value-33" name="value-33">
+                        <label class="dropdown__label" for="value-33">Deutch</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form__button-box form__button-box--filter">
+                  <button class="button button--reset">
+                    Сбросить
+                  </button>
+                  <button class="button button--apply">
+                    Применить
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="catalog__results">
+              <div class="catalog__cards">
+                <a href="#" class="card card--search">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-1.jpg" alt="hospital">
+                    <div class="card__btn">
+                      <svg width="17" height="20">
+                        <use xlink:href="img/sprite.svg#play"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search card--block">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-2.jpg" alt="hospital">
+                    <div class="card__btn card__btn--lock">
+                      <svg width="22" height="27">
+                        <use xlink:href="img/sprite.svg#block"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks bookmarks--block">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-1.jpg" alt="hospital">
+                    <div class="card__btn">
+                      <svg width="17" height="20">
+                        <use xlink:href="img/sprite.svg#play"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search card--block">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-2.jpg" alt="hospital">
+                    <div class="card__btn card__btn--lock">
+                      <svg width="22" height="27">
+                        <use xlink:href="img/sprite.svg#block"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks bookmarks--block">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-1.jpg" alt="hospital">
+                    <div class="card__btn">
+                      <svg width="17" height="20">
+                        <use xlink:href="img/sprite.svg#play"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search card--block">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-2.jpg" alt="hospital">
+                    <div class="card__btn card__btn--lock">
+                      <svg width="22" height="27">
+                        <use xlink:href="img/sprite.svg#block"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks bookmarks--block">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-1.jpg" alt="hospital">
+                    <div class="card__btn">
+                      <svg width="17" height="20">
+                        <use xlink:href="img/sprite.svg#play"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search card--block">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-2.jpg" alt="hospital">
+                    <div class="card__btn card__btn--lock">
+                      <svg width="22" height="27">
+                        <use xlink:href="img/sprite.svg#block"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks bookmarks--block">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="card card--search card--block">
+                  <div class="card__link-box">
+                    <img class="card__img" src="img/card-2.jpg" alt="hospital">
+                    <div class="card__btn card__btn--lock">
+                      <svg width="22" height="27">
+                        <use xlink:href="img/sprite.svg#block"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    <h3 class="card__title">
+                      Международный симпозиум по тромбозу и гемостазу
+                    </h3>
+                    <div class="card__description">
+                      <div class="card__description-box">
+                        <p class="card__description-name">
+                          Курс
+                        </p>
+                        <p class="card__description-text">
+                          15 лекций
+                        </p>
+                      </div>
+                      <button class="bookmarks bookmarks--block">
+                        <svg width="16" height="20">
+                          <use xlink:href="img/sprite.svg#bookmark-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item pagination__item--prev">
+                    <a href="#catalog" class="pagination__button pagination__button--prev disabled" data-paged="0">
+                      <svg width="9" height="14">
+                        <use xlink:href="img/sprite.svg#pagination-prev"></use>
+                      </svg>
+
+                      Назад </a>
+                  </li>
+
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page first current" data-paged="1">
+                      1 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page  " data-paged="2">
+                      2 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page  " data-paged="3">
+                      3 </a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page  " data-paged="4">
+                      4 </a>
+                  </li>
+                  <li class="pagination__item pagination__item--separate">
+                    ...
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#catalog" class="pagination__button pagination__button--page last" data-paged="7">
+                      7 </a>
+                  </li>
+
+                  <li class="pagination__item pagination__item--next">
+                    <a href="#catalog" class="pagination__button pagination__button--next " data-paged="2">
+                      Вперёд
+                      <svg width="9" height="14">
+                        <use xlink:href="img/sprite.svg#pagination-next"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
