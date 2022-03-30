@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         direction: "vertical",
         slidesPerView: "auto",
         freemode: true,
+        allowTouchMove: false,
+
         scrollbar: {
           el: ".scrollbar",
           dragClass: "scrollbar__drag",
@@ -93,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         direction: "vertical",
         slidesPerView: "auto",
         freemode: true,
+        allowTouchMove: false,
 
         scrollbar: {
           el: ".scrollbar",
