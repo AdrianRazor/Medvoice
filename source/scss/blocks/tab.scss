@@ -10,10 +10,14 @@
     }
 
     &__form {
-        max-width: 920px;
+        max-width: 860px;
         width: auto;
         padding: 0;
         box-shadow: none;
+
+        &--password {
+            max-width: 720px;
+        }
     }
 
 
