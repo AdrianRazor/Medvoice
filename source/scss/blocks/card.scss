@@ -6,7 +6,7 @@
     background-color: #fff;
     border: 1px solid var(--line);
     border-radius: 20px;
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease, border 0.5s ease;
 
     &__link-box {
         height: 160px;
@@ -102,18 +102,19 @@
 
 
     &:hover {
-        box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
-        transition: box-shadow 0.5s ease;
+        box-shadow: 0 0 20px 8px rgba(181, 186, 214, 0.17);
+        border: 1px solid transparent;
+        transition: box-shadow 0.5s ease, border 0.5s ease;
 
         & .card__btn {
             width: 68px;
             height: 68px;
             padding-left: 27px;
-            transition: all 0.2s ease;
+            transition: all 0.5s ease;
 
             & svg {
                 transform: scale(1.15);
-                transition: all 0.2s ease;
+                transition: all 0.5s ease;
             }
         }
     }
