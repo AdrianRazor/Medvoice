@@ -29,6 +29,7 @@
     }
     
     &__icon {
+        display: block;
         margin-left: auto;
         fill: var(--grey-1);
     }
@@ -90,4 +91,8 @@
             transform: rotate(180deg);
         }
     } 
+}
+
+.form__row.disabled .select__icon {
+    display: none;
 }
