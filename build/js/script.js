@@ -4,15 +4,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let buttonMinimize = document.querySelector('.nav__btn');
   let navigationMenu = document.querySelector('.nav');
   let mainContainer = document.querySelector('.content');
-  let logo = document.querySelector('.logo__img')
-  let logoShort = document.querySelector('.logo__img--short')
+  let logo = document.querySelector('.logo')
 
   if (buttonMinimize) {
     buttonMinimize.addEventListener('click', function () {
       navigationMenu.classList.toggle('nav--minimize');
       mainContainer.classList.toggle('content--minimize');
-      logo.classList.toggle('hidden');
-      logoShort.classList.toggle('hidden');
+      logo.classList.toggle('logo--min');
     })
   }
 
