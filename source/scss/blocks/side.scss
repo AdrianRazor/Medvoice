@@ -1,4 +1,6 @@
 .side {
+    position: relative;
+
     width: 385px;
     height: 650px;
 
@@ -19,8 +21,10 @@
     }
 
     &__body {
-        height: 100%;
-        position: relative;
+      position: static;
+      
+        height: 480px;
+        
         overflow: hidden;
     }
 
@@ -28,10 +32,12 @@
         height: 100%;
     }
 
+    &__list {
+      height: auto;
+    }
+
     &__item {
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
+      margin-bottom: 20px;
     }
 
     &__link {
