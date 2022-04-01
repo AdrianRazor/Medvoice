@@ -1,6 +1,10 @@
 .main {
     padding: 20px 20px 100px 20px;
 
+    &--search {
+        padding-top: 60px;
+    }
+
     &--lection {
         padding: 0;
         display: flex;
