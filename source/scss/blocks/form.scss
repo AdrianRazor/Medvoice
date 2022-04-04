@@ -313,6 +313,8 @@
         padding: 0;
         box-shadow: none;
         background-color: transparent;
+        border-radius: initial;
+        overflow: hidden;
 
         & .form__row {
             margin-top: 0;
