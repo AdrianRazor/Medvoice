@@ -1,4 +1,11 @@
 .social {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+
     &__policy {
         display: inline-block;
         font-weight: 500;
