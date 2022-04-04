@@ -1,10 +1,12 @@
 .logo {
     display: flex;
     width: 142px;
-    height: 21px;
+    min-height: 21px;
+    transition: all 0.3s ease;
 
     &__img {
         height: 100%;
+        object-position: left;
     }
 
     &--nav {
@@ -16,10 +18,7 @@
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
-
-        & .logo__img {
-            object-position: left;
-        }
+        transition: all 0.3s ease;
     }
 
     &--user {
