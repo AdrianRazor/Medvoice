@@ -1,86 +1,123 @@
 .pagination {
-    margin-top: 60px;
-    
-    &__list,
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  margin-top: 60px;
+
+  &__list,
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 5px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+
+    color: var(--violet-1);
+
+    &--mobile {
+      display: none;
     }
-    
-    &__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
-      margin: 0 5px;
+    &--prev {
+      margin-left: 0;
+      margin-right: 20px;
+    }
 
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 100%;
+    &--next {
+      margin-right: 0;
+      margin-left: 20px;
+    }
 
-      color: var(--violet-1);
+    @media screen and (max-width: 767px) {
+      display: none;
+
+      margin: 0;
+
+      &--mobile,
+      &--prev,
+      &--next {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      &--mobile {
+        pointer-events: none;
+      }
+
+      &--slash {
+        &::after {
+          content: '/';
+        }
+      }
 
       &--prev {
-        margin-left: 0;
-        margin-right: 20px;
+        margin-right: 25px;
       }
-      
+
       &--next {
-        margin-right: 0;
-        margin-left: 20px;
+        margin-left: 25px;
       }
     }
+  }
 
-    &__button {  
-      min-width: 24px;
-      height: 24px;
+  &__button {
+    min-width: 24px;
+    height: 24px;
 
-      font: inherit;
-  
-      color: inherit;
+    font: inherit;
 
+    color: inherit;
+
+    transition: all 0.2s ease;
+
+    svg {
+      fill: var(--violet-1);
+    }
+
+    &.disabled {
+      visibility: hidden;
+
+      pointer-events: none;
+    }
+
+    &.current {
+      pointer-events: none;
+      background-color: var(--violet-4);
+    }
+
+    &:hover {
+      color: var(--violet-2);
       transition: all 0.2s ease;
 
       svg {
-        fill: var(--violet-1);
-      }
-
-      &.disabled {
-        visibility: hidden;
-        
-        pointer-events: none;
-      }
-
-      &.current {
-        pointer-events: none;
-        background-color: var(--violet-4);
-      }
-
-      &:hover {
-        color: var(--violet-2);
-        transition: all 0.2s ease;
-
-        svg {
-          fill: var(--violet-2);
-        }
-      }
-
-      &--page {
-        background-color: transparent;
-        border-radius: 50%;
-      }
-
-      &--prev {
-        svg {
-          margin-right: 10px;
-        }
-      }
-
-      &--next {
-        svg {
-          margin-left: 10px;
-        }
+        fill: var(--violet-2);
       }
     }
+
+    &--page {
+      background-color: transparent;
+      border-radius: 50%;
+    }
+
+    &--prev {
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    &--next {
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
 }
