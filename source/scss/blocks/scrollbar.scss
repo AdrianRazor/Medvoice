@@ -30,7 +30,8 @@
   }
 }
 
-.side:hover .scrollbar {
+.side:hover .scrollbar,
+.select__body:hover .scrollbar {
   opacity: 1;
   transition: all 0.2s ease;
 }
