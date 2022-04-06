@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+  // Видео
+  const video = document.querySelector('.lection__video');
+
+  if (video) {
+    const videoPlayButton = video.querySelector('.lection__img');
+    const videoIframe = video.querySelector('iframe');
+
+    if (videoPlayButton && videoIframe) {
+      videoPlayButton.addEventListener('click', () => {
+        const videoId = videoPlayButton.dataset.videoId;
+
+        if (videoId) {
+          videoIframe.src = `https://player.vimeo.com/video/${videoId}?h=e4d417a182&autoplay=1&color=7b42e9&title=0&byline=0&portrait=0`;
+
+          videoPlayButton.classList.add('hide');
+        }
+      });
+    }
+  }
+
+
+  // 
 
   // Навигация
   let buttonMinimize = document.querySelector('.nav__btn');
@@ -50,22 +72,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       on: {
         init(e) {
-            if (window.screen.width >= 576) {
-                e.enable()
-            } else {
-                e.slideTo(0, 0)
-                e.disable()
-            }
+          if (window.screen.width >= 576) {
+            e.enable()
+          } else {
+            e.slideTo(0, 0)
+            e.disable()
+          }
         },
         resize(e) {
-            if (window.screen.width >= 576) {
-                e.enable()
-            } else {
-                e.slideTo(0, 0)
-                e.disable()
-            }
+          if (window.screen.width >= 576) {
+            e.enable()
+          } else {
+            e.slideTo(0, 0)
+            e.disable()
+          }
         }
-    }
+      }
     });
 
     const swiperWebinar = new Swiper('.swiper-webinar', {
@@ -79,22 +101,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       on: {
         init(e) {
-            if (window.screen.width >= 576) {
-                e.enable()
-            } else {
-                e.slideTo(0, 0)
-                e.disable()
-            }
+          if (window.screen.width >= 576) {
+            e.enable()
+          } else {
+            e.slideTo(0, 0)
+            e.disable()
+          }
         },
         resize(e) {
-            if (window.screen.width >= 576) {
-                e.enable()
-            } else {
-                e.slideTo(0, 0)
-                e.disable()
-            }
+          if (window.screen.width >= 576) {
+            e.enable()
+          } else {
+            e.slideTo(0, 0)
+            e.disable()
+          }
         }
-    }
+      }
     });
 
     const swiperLecture = new Swiper('.swiper-lecture', {
@@ -108,22 +130,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       on: {
         init(e) {
-            if (window.screen.width >= 576) {
-                e.enable()
-            } else {
-                e.slideTo(0, 0)
-                e.disable()
-            }
+          if (window.screen.width >= 576) {
+            e.enable()
+          } else {
+            e.slideTo(0, 0)
+            e.disable()
+          }
         },
         resize(e) {
-            if (window.screen.width >= 576) {
-                e.enable()
-            } else {
-                e.slideTo(0, 0)
-                e.disable()
-            }
+          if (window.screen.width >= 576) {
+            e.enable()
+          } else {
+            e.slideTo(0, 0)
+            e.disable()
+          }
         }
-    }
+      }
     });
 
     const selectSlides = document.querySelectorAll('.swiper-select');
