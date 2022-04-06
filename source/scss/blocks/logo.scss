@@ -24,3 +24,11 @@
         margin-bottom: 60px;
     }
 }
+
+
+@media (max-width: 375px) {
+    .logo {
+        width: 110px;
+        min-height: unset;
+    }
+}
