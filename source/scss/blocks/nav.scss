@@ -2,7 +2,7 @@
     max-width: 200px;
     padding: 25px 20px 0 25px;
     border-right: 1px solid var(--line);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 
     position: sticky;
     top: 0;
@@ -14,8 +14,6 @@
 
     &__head {
         margin-bottom: 25px;
-
-        
     }
 
     &__burger {
@@ -25,6 +23,7 @@
         width: 25px;
         height: 3px;
         background-color: #000;
+        transition: all 0.3s ease;
 
         &::before,
         &::after {
@@ -38,23 +37,30 @@
             top: -8px;
             right: 0;
             z-index: 10;
+
+            transition: all 0.3s ease;
         }
 
         &::after {
             top: 8px;
+            display: block;
         }
 
         &.open {
+            height: 2px;
+            top: 0;
+            transform: rotate(-45deg);
+            transition: all 0.4s ease;
+
             &::before {
                 height: 2px;
                 top: 0;
-                transform: rotate(45deg);
+                transform: rotate(90deg);
+                transition: all 0.4s ease;
             }
 
             &::after {
-                height: 2px;
-                top: 0;
-                transform: rotate(-45deg);
+                display: none;
             }
         }
     }
@@ -316,6 +322,7 @@
 
         background-color: var(--background);
         padding: 0 15px;
+        border-right: none;
 
         &.open {
             max-height: 100vh;
@@ -352,6 +359,43 @@
 
         &__btn {
             display: none;
+        }
+
+        &__wrapper {
+            padding: 10px 0 20px 0;
+            margin-bottom: 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        &__item{
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &--active {
+                background-color: transparent;
+            }
+        }
+
+        &__item-link {
+            padding: 10px 0;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__lang-list {
+            margin-left: 0;
+            margin-top: 5px;
         }
     }
 }

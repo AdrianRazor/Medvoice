@@ -7,6 +7,10 @@
     border-bottom: 1px solid var(--line);
     position: relative;
 
+    &--nav {
+        display: none;
+    }
+
     &__field {
         width: 260px;
         min-height: 40px;
@@ -64,5 +68,38 @@
 
     &__guest-mode {
         display: flex;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .header{
+        display: none;
+        
+        &--nav {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: unset;
+            align-items: unset;
+            padding: 20px 0 25px 0;
+        }
+
+        &__search {
+            margin-top: 25px;
+        }
+
+        &__field {
+            width: 100%;
+        }
+
+        &__user {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        &__trial-text {
+            margin-right: 0;
+            margin-top: 10px;
+        }
     }
 }
