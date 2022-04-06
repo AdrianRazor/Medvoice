@@ -15,6 +15,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
 
+  //Бургер
+  let nav = document.querySelector('.nav');
+  let burger = nav.querySelector('.nav__burger');
+
+  if (burger) {
+    burger.addEventListener('click', function() {
+      nav.classList.toggle('open');
+      burger.classList.toggle('open')
+    });
+  }
+
+
   // Выпадающее меню в шапке при клике на пользователя
   // let headerProfile = document.querySelector('.profile');
   // let headerProfileMenu = document.querySelector('.profile__menu');

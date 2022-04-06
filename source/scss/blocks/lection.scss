@@ -1,5 +1,6 @@
 .lection {
     padding: 40px 20px 100px 20px;
+    flex-grow: 1;
 
     &__head {
         display: flex;
@@ -49,15 +50,19 @@
 
     &__video {
         position: relative;
-        height: 430px;
+        height: auto;
         margin-bottom: 25px;
     }
 
     &__img {
-        height: 100%;
+        max-height: 430px;
         border-radius: 40px;
         overflow: hidden;
         cursor: pointer;
+
+        & img {
+            object-position: center;
+        }
     }
 
     &__btn {
