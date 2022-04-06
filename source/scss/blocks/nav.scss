@@ -4,8 +4,9 @@
     border-right: 1px solid var(--line);
     transition: all 0.3s ease;
 
-    position: fixed;
-    height: 100%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
     z-index: 50;
 
     display: flex;
@@ -123,20 +124,6 @@
         left: 46px;
         transform: translateY(-50%);
         z-index: 50;
-
-        // &::before {
-        //     content: '';
-        //     width: 12px;
-        //     height: 12px;
-        //     background-color: var(--violet-1);
-        //     border-radius: 2px;
-
-        //     position: absolute;
-        //     top: 50%;
-        //     left: -4px;
-        //     transform: translateY(-50%) rotate(45deg);
-        //     z-index: 5;
-        // }
     }
 
     &__lang-list {
