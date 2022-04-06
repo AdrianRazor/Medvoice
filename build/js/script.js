@@ -47,6 +47,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         nextEl: '.slider__btn-next',
         prevEl: '.slider__btn-prev',
       },
+
+      on: {
+        init(e) {
+            if (window.screen.width >= 576) {
+                e.enable()
+            } else {
+                e.slideTo(0, 0)
+                e.disable()
+            }
+        },
+        resize(e) {
+            if (window.screen.width >= 576) {
+                e.enable()
+            } else {
+                e.slideTo(0, 0)
+                e.disable()
+            }
+        }
+    }
     });
 
     const swiperWebinar = new Swiper('.swiper-webinar', {
@@ -57,6 +76,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         nextEl: '.slider__btn-next',
         prevEl: '.slider__btn-prev',
       },
+
+      on: {
+        init(e) {
+            if (window.screen.width >= 576) {
+                e.enable()
+            } else {
+                e.slideTo(0, 0)
+                e.disable()
+            }
+        },
+        resize(e) {
+            if (window.screen.width >= 576) {
+                e.enable()
+            } else {
+                e.slideTo(0, 0)
+                e.disable()
+            }
+        }
+    }
     });
 
     const swiperLecture = new Swiper('.swiper-lecture', {
@@ -67,6 +105,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         nextEl: '.slider__btn-next',
         prevEl: '.slider__btn-prev',
       },
+
+      on: {
+        init(e) {
+            if (window.screen.width >= 576) {
+                e.enable()
+            } else {
+                e.slideTo(0, 0)
+                e.disable()
+            }
+        },
+        resize(e) {
+            if (window.screen.width >= 576) {
+                e.enable()
+            } else {
+                e.slideTo(0, 0)
+                e.disable()
+            }
+        }
+    }
     });
 
     const selectSlides = document.querySelectorAll('.swiper-select');

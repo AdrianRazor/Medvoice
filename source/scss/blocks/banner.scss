@@ -216,3 +216,33 @@
         }
     }
 }
+
+
+@media (max-width: 375px) {
+    .banner {
+        padding: 60px 20px;
+        min-height: 337px;
+        margin-bottom: 40px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__form {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        &__input {
+            width: 250px;
+            padding: 0 20px;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            margin-top: 25px;
+        }
+    }
+}

@@ -26,6 +26,16 @@
             color: var(--violet-2);
             transition: all 0.2s ease;
         }
+
+        &--top {
+            display: block;
+        }
+
+        &--bottom {
+            display: none;
+            font-size: 14px;
+            align-self: flex-end;
+        }
     }
 
     &__btn-box {
@@ -66,4 +76,41 @@
 .swiper-button-disabled {
     pointer-events: none;
     fill: var(--violet-3);
+}
+
+
+
+@media (max-width: 375px) {
+    .slider {
+        &__body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__head {
+            justify-content: flex-start;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__btn-box {
+            display: none;
+        }
+
+        &__link {
+            &--top {
+                display: none;
+            }
+    
+            &--bottom {
+                display: block;
+            }
+        }
+    }
 }

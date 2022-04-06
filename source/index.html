@@ -11,7 +11,7 @@
 
 <body>
   <div class="container">
-    <aside class="nav">
+    <aside class="nav hidden">
       <a href="index.html" class="logo logo--nav">
         <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
       </a>
@@ -128,7 +128,7 @@
     </aside>
 
     <div class="content">
-      <header class="header">
+      <header class="header hidden">
         <div class="header__search">
           <form class="header__form">
             <input type="search" class="header__field" placeholder="Поиск...">
@@ -252,7 +252,7 @@
           <h1 class="banner__title">
             Международная платформа для обучения врачей
           </h1>
-          <form class="banner__form hidden">
+          <form class="banner__form">
             <input class="banner__input" type="email" placeholder="Ваш email">
             <button class="button" type="submit">Оформить триал</button>
           </form>
@@ -260,16 +260,16 @@
         </section>
 
         <section class="slider" id="courses">
-          <div class="swiper swiper-courses">
+          <div class="swiper swiper-courses slider__body">
             <div class="slider__head">
               <h2 class="slider__title">
                 Курсы
               </h2>
-              <a href="#" class="slider__link">
+              <a href="catalog-courses.html" class="slider__link slider__link--top">
                 Смотреть все курсы
               </a>
             </div>
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper slider__wrapper">
               <a href="#" class="swiper-slide card">
                 <div class="card__link-box">
                   <img class="card__img" src="img/card-1.jpg" alt="hospital">
@@ -463,20 +463,23 @@
                 </svg>
               </button>
             </div>
+            <a href="catalog-courses.html" class="slider__link slider__link--bottom">
+              Смотреть все курсы
+            </a>
           </div>
         </section>
 
         <section class="slider" id="webinars">
-          <div class="swiper swiper-webinar">
+          <div class="swiper swiper-webinar slider__body">
             <div class="slider__head">
               <h2 class="slider__title">
                 Вебинары
               </h2>
-              <a href="#" class="slider__link">
+              <a href="webinars.html" class="slider__link slider__link--top">
                 Смотреть все вебинары
               </a>
             </div>
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper slider__wrapper">
               <a href="#" class="swiper-slide card">
                 <div class="card__link-box">
                   <img class="card__img" src="img/card-3.jpg" alt="hospital">
@@ -670,20 +673,23 @@
                 </svg>
               </button>
             </div>
+            <a href="webinars.html" class="slider__link slider__link--bottom">
+              Смотреть все вебинары
+            </a>
           </div>
         </section>
 
         <section class="slider" id="lections">
-          <div class="swiper swiper-lecture">
+          <div class="swiper swiper-lecture slider__body">
             <div class="slider__head">
               <h2 class="slider__title">
                 Смотреть бесплатные лекции
               </h2>
-              <a href="#" class="slider__link">
+              <a href="lection.html" class="slider__link slider__link--top">
                 Смотреть все лекции
               </a>
             </div>
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper slider__wrapper">
               <a href="#" class="swiper-slide card">
                 <div class="card__link-box">
                   <img class="card__img" src="img/card-5.jpg" alt="hospital">
@@ -877,6 +883,9 @@
                 </svg>
               </button>
             </div>
+            <a href="lection.html" class="slider__link slider__link--bottom">
+              Смотреть все лекции
+            </a>
           </div>
         </section>
       </main>
