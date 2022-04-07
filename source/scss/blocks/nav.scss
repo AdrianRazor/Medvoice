@@ -313,7 +313,7 @@
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .nav {
         max-width: unset;
         width: 100%;
@@ -325,7 +325,7 @@
         border-right: none;
 
         &.open {
-            max-height: 100vh;
+            min-height: 100vh;
         }
 
         &__head {

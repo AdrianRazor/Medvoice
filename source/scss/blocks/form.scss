@@ -123,8 +123,8 @@
         border-radius: 50%;
 
         position: absolute;
-        top: -28px;
-        left: 72px;
+        bottom: 0;
+        left: 50%;
         z-index: 10;
 
         &::before,
@@ -323,7 +323,7 @@
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .form {
         padding: 40px 15px;
         border-radius: 20px;
@@ -335,6 +335,49 @@
         &__title {
             font-size: 22px;
             line-height: 120%;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+
+        &__avatar {
+            margin-bottom: 20px;
+
+            &-box {
+                margin: 0 auto;
+            }
+        }
+
+        &__upload {
+            transform: translateX(22px);
+        }
+
+        &__content {
+            max-width: unset;
+            width: 100%;
+            margin: 0;
+
+            &--account:not(:last-child) {
+                margin: 0 0 20px 0;
+            }
+        }
+
+        &__row {
+            &:not(:first-of-type) {
+                margin-top: 20px;
+            }
+        }
+
+        &__button {
+            &-box {
+                justify-content: center;
+            }
+
+            &--tab {
+                margin: 0 auto;
+            }
         }
     }
 }
