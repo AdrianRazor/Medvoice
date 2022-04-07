@@ -140,5 +140,10 @@
         &--apply {
             width: fit-content;
         }
+
+        &--tag {
+            min-height: 28px;
+            font-size: 12px;
+        }
     }
 }

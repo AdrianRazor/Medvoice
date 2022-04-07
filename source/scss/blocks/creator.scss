@@ -89,3 +89,10 @@
         }
     }
 }
+
+
+@media (max-width: 375px) {
+    .creator {
+        max-width: unset;
+    }
+}

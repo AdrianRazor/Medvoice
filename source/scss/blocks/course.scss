@@ -54,3 +54,26 @@
         }
     }
 }
+
+
+@media (max-width: 375px) {
+    .course {
+        &__about {
+            padding: 0;
+            flex-direction: column;
+        }
+
+        &__info {
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+
+        &__content {
+            & p,
+            & ul,
+            & ol {
+                font-size: 14px;
+            }
+        }
+    }
+}
