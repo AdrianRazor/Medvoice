@@ -122,6 +122,10 @@
 
 @media (max-width: 375px) {
     .button {
+        &--trial {
+            width: 100%;
+        }
+        
         &--subscribe {
             padding: 0 20px;
             margin-right: 20px;
