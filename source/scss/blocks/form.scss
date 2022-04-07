@@ -328,6 +328,10 @@
         padding: 40px 15px;
         border-radius: 20px;
 
+        &--filter {
+            padding: 0;
+        }
+
         &__title {
             font-size: 22px;
             line-height: 120%;

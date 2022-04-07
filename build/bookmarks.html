@@ -11,9 +11,101 @@
 <body>
   <div class="container">
     <aside class="nav">
-      <a href="index.html" class="logo logo--nav">
-        <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
-      </a>
+      <div class="nav__head">
+        <a href="index.html" class="logo">
+          <img class="logo__img" src="img/medvoice-logo.png" alt="Medvoice Logo">
+        </a>
+        <button class="nav__burger"></button>
+      </div>
+      <header class="header header--nav">
+        <div class="header__search">
+          <form class="header__form">
+            <input type="search" class="header__field" placeholder="Поиск...">
+          </form>
+          <div class="results hidden">
+            <h3 class="results__title">
+              Результаты
+            </h3>
+
+            <p class="results__empty">
+              По вашему запросу результатов не найдено
+            </p>
+
+            <ul class="results__list">
+              <li class="results__item">
+                <a href="#" class="results__link">
+                  <div class="results__img-box">
+                    <img class="results__img" src="img/card-1.jpg" alt="">
+                  </div>
+                  <div class="results__text-box">
+                    <p class="results__text">
+                      Курс
+                    </p>
+                    <h4 class="results__name">
+                      Международный симпозиум по хирургии
+                    </h4>
+                  </div>
+                </a>
+              </li>
+
+              <li class="results__item">
+                <a href="#" class="results__link">
+                  <div class="results__img-box">
+                    <img class="results__img" src="img/card-3.jpg" alt="">
+                  </div>
+                  <div class="results__text-box">
+                    <p class="results__text">
+                      Вебинар
+                    </p>
+                    <h4 class="results__name">
+                      Международный симпозиум по хирургии
+                    </h4>
+                  </div>
+                </a>
+              </li>
+
+              <li class="results__item">
+                <a href="#" class="results__link">
+                  <div class="results__img-box">
+                    <img class="results__img" src="img/card-5.jpg" alt="">
+                  </div>
+                  <div class="results__text-box">
+                    <p class="results__text">
+                      Лекция
+                    </p>
+                    <h4 class="results__name">
+                      Всё о хирургии
+                    </h4>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <a href="search.html" class="results__button button">
+              Смотреть больше
+            </a>
+          </div>
+        </div>
+
+        <div class="header__guest-mode hidden">
+          <a href="#" class="button button--subscribe">Оформить подписку</a>
+          <a href="#" class="button button--login">Log in</a>
+        </div>
+
+        <div class="header__user">
+          <p class="header__trial-text hidden">
+            Осталось <span class="header__trial-count">7 дней</span> триала
+          </p>
+          <a href="account.html" class="profile">
+            <div class="profile__avatar">
+              <img class="profile__avatar-img" src="img/avatar.jpg" alt="avatar">
+            </div>
+            <p class="profile__username">
+              Kseniia Vesta
+            </p>
+          </a>
+        </div>
+      </header>
       <button class="nav__btn">
         <svg class="nav__btn-arrow" width="6" height="10">
           <use xlink:href="img/sprite.svg#nav-arrow"></use>
