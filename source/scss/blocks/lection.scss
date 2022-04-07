@@ -10,11 +10,12 @@
   }
 
   &__breadcrumb {
-    display: flex;
-    align-items: center;
+    display: inline-block;
   }
 
   &__breadcrumb-item {
+    display: inline;
+
     &:not(:first-child) {
       position: relative;
       margin-left: 15px;
@@ -24,7 +25,7 @@
         color: var(--grey-1);
         position: absolute;
         top: -1px;
-        left: -10px;
+        left: -12px;
       }
     }
   }
