@@ -37,6 +37,11 @@
     color: var(--grey-1);
   }
 
+  &__x {
+    display: flex;
+    background-color: transparent;
+  }
+
   &__x-icon {
     cursor: pointer;
     margin-left: 15px;
