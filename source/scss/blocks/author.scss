@@ -43,3 +43,18 @@
         }
     }
 }
+
+
+@media (max-width: 375px) {
+    .author {
+        &__content {
+            padding: 0;
+
+            & p,
+            & ul,
+            & ol {
+                font-size: 14px;
+            }
+        }
+    }
+}

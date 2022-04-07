@@ -221,7 +221,8 @@
     }
   }
 
-  .course__tab .catalog__head {
+  .course__tab .catalog__head,
+  .author__tab .catalog__head {
     display: none;
   }
 }

@@ -264,7 +264,26 @@
             }
         }
 
-        &--course {
+        &__info {
+            margin-bottom: 40px;
+        }
+
+        &__avatar {
+            width: 56px;
+            height: 56px;
+            margin-right: 10px;
+        }
+
+        &__user {
+            font-size: 18px;
+        }
+
+        &__special {
+            font-size: 14px;
+        }
+
+        &--course,
+        &--author {
             min-height: unset;
             padding: 40px 20px 0 20px;
             margin-bottom: 40px;
