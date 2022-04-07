@@ -199,3 +199,55 @@
     }
   }
 }
+
+
+@media (max-width: 375px) {
+  .lection {
+    padding: 0;
+
+    &__breadcrumb-link {
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    &__title {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    &__video {
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      width: 80px;
+      height: 80px;
+      padding-left: 31px;
+
+      & svg {
+        width: 27px;
+        height: 32px;
+      }
+    }
+
+    &__description {
+      width: 100%;
+      border-bottom: 2px solid var(--line);
+      margin-bottom: 20px;
+    }
+  
+    &__description-text {
+      font-size: 16px;
+    }
+
+    &__info {
+      flex-direction: column;
+    }
+
+    &__content {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+}
