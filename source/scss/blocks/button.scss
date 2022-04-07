@@ -122,8 +122,6 @@
 
 @media (max-width: 375px) {
     .button {
-        width: 100%;
-
         &--subscribe {
             padding: 0 20px;
             margin-right: 20px;
@@ -131,14 +129,7 @@
     
         &--login {
             padding: 0 20px;
-            width: fit-content;
             white-space: nowrap;
-        }
-
-        &--filter,
-        &--reset,
-        &--apply {
-            width: fit-content;
         }
 
         &--tag {

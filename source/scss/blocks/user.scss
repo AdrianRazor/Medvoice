@@ -16,3 +16,10 @@
         flex-direction: column;
     }
 }
+
+
+@media (max-width: 375px) {
+    .user {
+        padding: 20px 15px;
+    }
+}

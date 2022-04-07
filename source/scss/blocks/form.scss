@@ -322,3 +322,15 @@
     }
 }
 
+
+@media (max-width: 375px) {
+    .form {
+        padding: 40px 15px;
+        border-radius: 20px;
+
+        &__title {
+            font-size: 22px;
+            line-height: 120%;
+        }
+    }
+}
