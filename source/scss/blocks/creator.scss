@@ -91,6 +91,13 @@
 }
 
 
+@media (max-width: 1023px) {
+    .creator {
+        margin: 0;
+    }
+}
+
+
 @media (max-width: 767px) {
     .creator {
         max-width: unset;

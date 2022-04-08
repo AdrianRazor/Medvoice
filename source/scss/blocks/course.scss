@@ -56,11 +56,21 @@
 }
 
 
+@media (max-width: 1023px) {
+    .course {
+        &__about {
+            flex-direction: column;
+            padding-left: 60px;
+            padding-left: 60px;
+        }
+    }
+}
+
+
 @media (max-width: 767px) {
     .course {
         &__about {
             padding: 0;
-            flex-direction: column;
         }
 
         &__info {
