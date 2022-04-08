@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let tabName = document.querySelectorAll('.account__item');
   let tab = document.querySelectorAll('.tab');
 
-  if (tab && window.screen.width >= 768) {
+  if (tab) {
     tabName.forEach(function (item) {
       item.addEventListener('click', function () {
         for (let i = 0; i < tabName.length; i++) {

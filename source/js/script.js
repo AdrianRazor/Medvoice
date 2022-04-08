@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   
-
   // Навигация
   let buttonMinimize = document.querySelector('.nav__btn');
   let navigationMenu = document.querySelector('.nav');
