@@ -96,7 +96,8 @@
         }
 
         &__wrapper {
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 25px;
             margin-bottom: 25px;
         }
@@ -113,6 +114,14 @@
             &--bottom {
                 display: block;
             }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        &__wrapper {
+            grid-template-columns: 1fr;
         }
     }
 }

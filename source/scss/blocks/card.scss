@@ -159,5 +159,10 @@
     .card {
         max-width: unset;
         margin-right: 0;
+
+        & .card__link-box {
+            max-height: unset;
+            min-height: 160px;
+        }
     }
 }

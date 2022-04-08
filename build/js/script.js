@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       on: {
         init(e) {
-          if (window.screen.width >= 576) {
+          if (window.screen.width >= 768) {
             e.enable()
           } else {
             e.slideTo(0, 0)
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           }
         },
         resize(e) {
-          if (window.screen.width >= 576) {
+          if (window.screen.width >= 768) {
             e.enable()
           } else {
             e.slideTo(0, 0)
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       on: {
         init(e) {
-          if (window.screen.width >= 576) {
+          if (window.screen.width >= 768) {
             e.enable()
           } else {
             e.slideTo(0, 0)
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           }
         },
         resize(e) {
-          if (window.screen.width >= 576) {
+          if (window.screen.width >= 768) {
             e.enable()
           } else {
             e.slideTo(0, 0)
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       on: {
         init(e) {
-          if (window.screen.width >= 576) {
+          if (window.screen.width >= 768) {
             e.enable()
           } else {
             e.slideTo(0, 0)
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           }
         },
         resize(e) {
-          if (window.screen.width >= 576) {
+          if (window.screen.width >= 768) {
             e.enable()
           } else {
             e.slideTo(0, 0)
