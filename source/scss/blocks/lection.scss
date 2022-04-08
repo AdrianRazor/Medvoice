@@ -202,10 +202,15 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .lection {
     padding: 0;
+  }
+}
 
+
+@media (max-width: 767px) {
+  .lection {
     &__breadcrumb-link {
       font-size: 16px;
       line-height: 120%;
@@ -230,12 +235,6 @@
         width: 27px;
         height: 32px;
       }
-    }
-
-    &__description {
-      width: 100%;
-      border-bottom: 2px solid var(--line);
-      margin-bottom: 20px;
     }
   
     &__description-text {

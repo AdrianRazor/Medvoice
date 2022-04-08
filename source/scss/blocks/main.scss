@@ -20,14 +20,19 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .main {
-        padding: 20px 15px 100px 15px;
-
         &--lection {
+            padding: 20px 15px 100px;
             display: flex;
             flex-direction: column;
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        padding: 20px 15px 100px 15px;
 
         &--user {
             padding: 0;
