@@ -102,3 +102,33 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .tariff-card {
+        min-height: 200px;
+
+        &__duration {
+            font-size: 22px;
+        }
+
+        &__number {
+            font-size: 36px;
+        }
+
+        &__currency {
+            font-size: 24px;
+
+            &--left {
+                margin-top: 3px;
+            }
+        
+            &--right {
+                margin-bottom: 1px;
+            }
+        }
+
+        &__button {
+            font-size: 16px;
+        }
+    }
+}

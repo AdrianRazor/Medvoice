@@ -34,7 +34,8 @@
     .main {
         padding: 20px 15px 100px 15px;
 
-        &--user {
+        &--user,
+        &--tariff {
             padding: 0;
         }
     }
