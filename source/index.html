@@ -18,7 +18,7 @@
         </a>
         <button class="nav__burger"></button>
       </div>
-      <header class="header header--nav">
+      <div class="header header--nav">
         <div class="header__search">
           <form class="header__form">
             <input type="search" class="header__field" placeholder="Поиск...">
@@ -94,19 +94,48 @@
         </div>
 
         <div class="header__user">
-          <p class="header__trial-text hidden">
-            Осталось <span class="header__trial-count">7 дней</span> триала
-          </p>
-          <a href="account.html" class="profile">
+          <div class="profile">
+            <p class="profile__trial hidden">
+              Осталось <span class="header__trial-count">7 дней</span> триала
+            </p>
             <div class="profile__avatar">
               <img class="profile__avatar-img" src="img/avatar.jpg" alt="avatar">
             </div>
             <p class="profile__username">
               Kseniia Vesta
             </p>
-          </a>
+
+            <div class="profile__menu">
+              <ul class="profile__list">
+                <li class="profile__item">
+                  <a class="profile__item-link" href="account.html">
+                    <svg class="profile__icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#profile"></use>
+                    </svg>
+                    <p class="profile__text">Профиль</p>
+                  </a>
+                </li>
+                <li class="profile__item">
+                  <a class="profile__item-link" href="bookmarks.html">
+                    <svg class="profile__icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#bookmarks"></use>
+                    </svg>
+                    <p class="profile__text">Закладки</p>
+                  </a>
+                </li>
+                <li class="profile__item">
+                  <a class="profile__item-link" href="#">
+                    <svg class="profile__icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#exit"></use>
+                    </svg>
+                    <p class="profile__text">Выйти</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
       <button class="nav__btn">
         <svg class="nav__btn-arrow" width="6" height="10">
           <use xlink:href="img/sprite.svg#nav-arrow"></use>
@@ -296,10 +325,10 @@
         </div>
 
         <div class="header__user">
-          <p class="header__trial-text hidden">
-            Осталось <span class="header__trial-count">7 дней</span> триала
-          </p>
           <div class="profile">
+            <p class="profile__trial hidden">
+              Осталось <span class="header__trial-count">7 дней</span> триала
+            </p>
             <div class="profile__avatar">
               <img class="profile__avatar-img" src="img/avatar.jpg" alt="avatar">
             </div>

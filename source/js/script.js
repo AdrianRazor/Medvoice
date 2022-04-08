@@ -28,6 +28,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Выпадающее меню в шапке при клике на пользователя
+  let headerProfile = document.querySelector('.profile');
+  let headerProfileMenu = document.querySelector('.profile__menu');
+
+  if (headerProfile) {
+    headerProfile.addEventListener('click', () => {
+      headerProfileMenu.classList.toggle('hidden');
+    })
+  }
+
+  window.addEventListener('click', e => {
+    if (headerProfileMenu) {
+      const target = e.target;
+      if (!target.closest('.profile__menu') && !target.closest('.profile')) {
+        headerProfileMenu.classList.add('hidden');
+      }
+    }
+  })
+
 
   // Свайпер
   let swiperExist = document.querySelector('.swiper');

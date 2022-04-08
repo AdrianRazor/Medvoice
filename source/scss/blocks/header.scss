@@ -52,20 +52,6 @@
         position: relative;
     }
 
-    &__trial-text {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-        color: #DF5023;
-        transition: all 0.2s ease;
-        margin-right: 40px;
-
-        &:hover {
-            color: #E07554;
-            transition: all 0.2s ease;
-        }
-    }
-
     &__guest-mode {
         display: flex;
     }
@@ -95,11 +81,6 @@
         &__user {
             flex-direction: column-reverse;
             align-items: flex-start;
-        }
-
-        &__trial-text {
-            margin-right: 0;
-            margin-top: 10px;
         }
     }
 }
