@@ -325,7 +325,7 @@
         border-right: none;
 
         &.open {
-            min-height: 100vh;
+            max-height: 100vh;
         }
 
         &__head {

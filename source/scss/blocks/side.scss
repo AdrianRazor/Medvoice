@@ -46,6 +46,10 @@
         display: flex;
         align-items: center;
         height: 80px;
+
+        &--block {
+            pointer-events: none;
+        }
     }
 
     &__video {
@@ -82,6 +86,15 @@
         & svg {
             fill: var(--violet-1);
             transition: all 0.2s ease;
+        }
+
+        &--block {
+            justify-content: center;
+            padding: 0;
+
+            & svg {
+                width: 16px;
+            }
         }
     }
 
