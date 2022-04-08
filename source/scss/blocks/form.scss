@@ -323,20 +323,8 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     .form {
-        padding: 40px 15px;
-        border-radius: 20px;
-
-        &--filter {
-            padding: 0;
-        }
-
-        &__title {
-            font-size: 22px;
-            line-height: 120%;
-        }
-
         &__wrapper {
             flex-direction: column;
             margin-bottom: 25px;
@@ -368,6 +356,23 @@
             &:not(:first-of-type) {
                 margin-top: 20px;
             }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .form {
+        padding: 40px 15px;
+        border-radius: 20px;
+
+        &--filter {
+            padding: 0;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 120%;
         }
 
         &__button {
