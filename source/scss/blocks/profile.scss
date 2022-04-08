@@ -146,5 +146,13 @@
         &__menu {
             left: 0;
         }
+
+        &__list {
+            border-radius: 15px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
     }
 }
