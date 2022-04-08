@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         direction: "vertical",
         slidesPerView: "auto",
         freemode: true,
-        allowTouchMove: false,
+        allowTouchMove: true,
 
         scrollbar: {
           el: ".scrollbar",
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         direction: "vertical",
         slidesPerView: "auto",
         freemode: true,
-        allowTouchMove: false,
+        allowTouchMove: true,
 
         scrollbar: {
           el: ".scrollbar",
