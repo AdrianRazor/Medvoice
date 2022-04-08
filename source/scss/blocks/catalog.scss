@@ -126,39 +126,22 @@
 }
 
 
-
-@media (min-width: 1200px) {
-  .catalog {
-    &__filter.hidden+.catalog__results .catalog__cards {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-}
-
-@media (min-width: 1400px) {
+@media (max-width: 1023px) {
   .catalog {
     &__cards {
-      grid-template-columns: repeat(5, 1fr);
-    }
-
-    &__filter.active+.catalog__results .catalog__cards {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
 
-@media (min-width: 1700px) {
+
+@media (max-width: 910px) {
   .catalog {
     &__cards {
-      grid-template-columns: repeat(6, 1fr);
-    }
-
-    &__filter.active+.catalog__results .catalog__cards {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
-
 
 
 @media (max-width: 767px) {
@@ -212,7 +195,6 @@
     }
 
     &__cards {
-      grid-template-columns: 1fr;
       gap: 25px;
     }
 
@@ -224,5 +206,48 @@
   .course__tab .catalog__head,
   .author__tab .catalog__head {
     display: none;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .catalog {
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .catalog {
+    &__filter.hidden+.catalog__results .catalog__cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .catalog {
+    &__cards {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__filter.active+.catalog__results .catalog__cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .catalog {
+    &__cards {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__filter.active+.catalog__results .catalog__cards {
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
 }
