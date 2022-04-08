@@ -53,8 +53,9 @@
     }
 
     &__video {
-        min-width: 140px;
+        width: 140px;
         height: 80px;
+        flex-shrink: 0;
         border-radius: 15px;
         position: relative;
         margin-right: 15px;
