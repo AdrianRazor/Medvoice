@@ -22,11 +22,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const rootElement = document.documentElement; 
 
     burger.addEventListener('click', function() {
+      alert('Not Safari');
       nav.classList.toggle('open');
       burger.classList.toggle('open');
       rootElement.classList.toggle('block');
+
+      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        alert('Safari');
+        nav.classList.toggle('padding');
+      };
     });
-  }
+  };
 
 
   // Свайпер

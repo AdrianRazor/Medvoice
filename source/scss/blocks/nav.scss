@@ -19,48 +19,78 @@
     &__burger {
         display: none;
 
-        position: relative;
         width: 25px;
-        height: 3px;
-        background-color: #000;
-        transition: all 0.3s ease;
+        height: 20px;
+        background-color: transparent;
+        position: relative;
+        z-index: 20;
 
-        &::before,
-        &::after {
-            content: '';
+        & span {
             display: block;
-            width: 25px;
-            height: 3px;
-            background-color: #000;
-
             position: absolute;
-            top: -8px;
-            right: 0;
-            z-index: 10;
+            height: 3px;
+            width: 100%;
+            background-color: #000;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
 
-            transition: all 0.3s ease;
-        }
+            &:nth-child(1) {
+                top: 0px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+            }
 
-        &::after {
-            top: 8px;
-            display: block;
+            &:nth-child(2) {
+                top: 8px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+            }
+
+            &:nth-child(3) {
+                top: 16px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+            }
         }
 
         &.open {
-            height: 2px;
-            top: 0;
-            transform: rotate(-45deg);
-            transition: all 0.4s ease;
+            & span {
+                &:nth-child(1) {
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    top: 0;
+                    left: 4px;
+                }
 
-            &::before {
-                height: 2px;
-                top: 0;
-                transform: rotate(90deg);
-                transition: all 0.4s ease;
-            }
+                &:nth-child(2) {
+                    width: 0%;
+                    opacity: 0;
+                }
 
-            &::after {
-                display: none;
+                &:nth-child(3) {
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    top: 18px;
+                    left: 4px;
+                }
             }
         }
     }
@@ -326,6 +356,10 @@
 
         &.open {
             max-height: 100vh;
+        }
+
+        &.padding {
+            padding-bottom: 50px;
         }
 
         &__head {
