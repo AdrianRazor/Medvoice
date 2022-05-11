@@ -18,6 +18,11 @@
     &--user {
         padding: 0;
     }
+
+    &--policy {
+        padding-top: 100px;
+        padding-bottom: 160px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -26,6 +31,15 @@
             padding: 20px 15px 100px;
             display: flex;
             flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .main {
+        &--policy {
+            padding-top: 60px;
+            padding-bottom: 100px;
         }
     }
 }

@@ -1,0 +1,163 @@
+.policy {
+  max-width: 635px;
+  width: 100%;
+  margin-left: 205px;
+
+  &__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--grey-1);
+    margin-bottom: 15px;
+  }
+
+  &__update {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--grey-1);
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    & h2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+      color: var(--grey-1);
+    }
+
+    & p,
+    & ul,
+    & ol,
+    & li,
+    & a {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: var(--grey-1);
+    }
+
+    & a {
+      color: var(--violet-1);
+      border-bottom: 1px solid var(--violet-1);
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--violet-2);
+        border-bottom: 1px solid var(--violet-2);
+        transition: all 0.2s ease;
+      }
+    }
+
+    & li {
+      list-style-type: revert;
+      list-style-position: inside;
+    }
+
+    & p + h2,
+    & ol + h2,
+    & ul + h2,
+    & h2 + h2,
+    & h3 + h2 {
+      margin-top: 40px;
+    }
+
+    & p + p,
+    & ul + p,
+    & ol + p,
+    & h2 + p,
+    & h3 + p,
+    & p + ul,
+    & ul + ul,
+    & ol + ul,
+    & h2 + ul,
+    & h3 + ul, 
+    & p + ol,
+    & ul + ol,
+    & ol + ol,
+    & h2 + ol,
+    & h3 + ol,
+    & p + h3,
+    & ul + h3,
+    & ol + h3,
+    & h2 + h3,
+    & h3 + h3 {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media(max-width: 1279px) {
+  .policy {
+    margin-left: 100px;
+  }
+}
+
+@media(max-width: 1023px) {
+  .policy {
+    margin-left: unset;
+  }
+}
+
+@media(max-width: 767px) {
+  .policy {
+    &__title {
+      font-size: 24px;
+    }
+  
+    &__update {
+      font-size: 10px;
+      margin-bottom: 25px;
+    }
+  
+    &__content {
+      & h2 {
+        font-size: 18px;
+      }
+  
+      & p,
+      & ul,
+      & ol,
+      & li,
+      & a {
+        font-size: 12px;
+      }
+  
+      & p + h2,
+      & ol + h2,
+      & ul + h2,
+      & h2 + h2,
+      & h3 + h2 {
+        margin-top: 25px;
+      }
+  
+      & p + p,
+      & ul + p,
+      & ol + p,
+      & h2 + p,
+      & h3 + p,
+      & p + ul,
+      & ul + ul,
+      & ol + ul,
+      & h2 + ul,
+      & h3 + ul, 
+      & p + ol,
+      & ul + ol,
+      & ol + ol,
+      & h2 + ol,
+      & h3 + ol,
+      & p + h3,
+      & ul + h3,
+      & ol + h3,
+      & h2 + h3,
+      & h3 + h3 {
+        margin-top: 15px;
+      }
+    }
+  }
+}
